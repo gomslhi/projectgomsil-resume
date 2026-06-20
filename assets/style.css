@@ -1,0 +1,379 @@
+:root {
+    /* Light Theme (Default) */
+    --bg-main: #FFFFFF; 
+    --text-primary: #111111; 
+    --text-secondary: #666666; 
+    --accent-cyan: #0055FF; 
+    --accent-blue: #0055FF; 
+    --accent-pink: #FF0055;
+    --border-color: #E5E5E5; 
+    --nav-bg: rgba(255, 255, 255, 0.85);
+    --nav-border: rgba(0, 0, 0, 0.05);
+    --tag-bg: #F8F9FA;
+    --tag-text: #333333;
+    --btn-hover-bg: rgba(0, 85, 255, 0.05);
+    --btn-hover-shadow: rgba(0, 85, 255, 0.15);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] {
+    --bg-main: #000000;
+    --text-primary: #FFFFFF;
+    --text-secondary: #888888;
+    --accent-cyan: #08FDD8;
+    --accent-blue: #08FDD8; /* Using cyan alias to keep style consistent */
+    --accent-pink: #FD2155;
+    --border-color: #33363D;
+    --nav-bg: rgba(0, 0, 0, 0.85);
+    --nav-border: rgba(255, 255, 255, 0.05);
+    --tag-bg: #242730;
+    --tag-text: #D1D5DB;
+    --btn-hover-bg: rgba(8, 253, 216, 0.1);
+    --btn-hover-shadow: rgba(8, 253, 216, 0.3);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+html {
+    /* Custom JS smooth scrolling will handle this now */
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Extremely high z-index to always stay on top */
+    width: 100%;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--nav-border);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; /* Perfect circle */
+    object-fit: cover; /* Prevents stretching */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo span {
+    color: var(--accent-blue);
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: all 0.3s;
+}
+
+.theme-btn:hover {
+    background: var(--btn-hover-bg);
+    border-color: var(--accent-cyan);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: -100px auto 0 auto; /* pull up under navbar */
+    padding-top: 100px;
+    max-width: 1400px;
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin-left: 5%;
+}
+
+.html-tag {
+    color: #515152;
+    font-family: 'La Belle Aurore', cursive, 'Inter', monospace;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-left: -1rem;
+}
+
+.top-tag {
+    margin-bottom: 1.5rem;
+    margin-left: -2rem;
+}
+
+.main-text h1 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 0.5rem 0;
+    letter-spacing: -2px;
+}
+
+.accent-g {
+    color: var(--accent-cyan);
+    position: relative;
+    display: inline-block;
+    text-shadow: -4px 0 var(--accent-pink);
+}
+
+.main-text p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.contact-btn:hover {
+    background: var(--btn-hover-bg);
+    box-shadow: var(--btn-hover-shadow);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    color: var(--text-secondary);
+    writing-mode: vertical-rl;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator.left {
+    left: 20px;
+    transform: rotate(180deg);
+}
+
+.scroll-indicator.right {
+    right: 20px;
+}
+
+@keyframes bounce {
+    0%, 100% { bottom: 40px; }
+    50% { bottom: 30px; }
+}
+
+/* Sequential Sections Container - Medium Style */
+.tabs-container {
+    max-width: 740px; /* Narrower width for reading comfort like Medium */
+    margin: 5rem auto 0 auto; /* Centered in the screen */
+    padding: 0 5%;
+    padding-bottom: 60vh; /* Extra blank space at the bottom so the last section can scroll up to the top */
+}
+
+
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+    text-decoration: none; /* Add this because they are now anchor tags */
+    display: inline-block;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+}
+
+/* Sequential Sections Styling */
+.content-section {
+    margin-bottom: 5rem;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 1px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-group h4 {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.timeline {
+    border-left: 2px solid var(--border-color);
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.job-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.job-item::before {
+    content: '';
+    position: absolute;
+    left: -2.4rem;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-blue);
+    border: 4px solid var(--bg-main);
+}
+
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job-meta h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.job-date {
+    color: var(--accent-blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.job-company {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.job-item ul, .job-item p {
+    color: var(--text-secondary);
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.job-item li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .line-decor {
+        margin: 0 auto 2rem;
+    }
+    .hero-center {
+        order: -1;
+    }
+    .scroll-btn {
+        margin: 0 auto;
+    }
+    .side-info {
+        text-align: center;
+    }
+    .tab-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
