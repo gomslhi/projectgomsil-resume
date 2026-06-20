@@ -353,7 +353,7 @@ html {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive */
+/* Responsive Design for Mobile */
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
@@ -375,5 +375,61 @@ html {
     .tab-header {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Fix Navbar for Mobile */
+    .navbar-inner {
+        flex-direction: column;
+        padding: 1rem 5%;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .theme-btn {
+        margin-left: 0;
+        width: 100%; /* Make button full width on mobile for easier tapping */
+    }
+
+    /* Fix Giant Hero Text for Mobile */
+    .main-text h1 {
+        font-size: 3.5rem !important;
+        line-height: 1.1 !important;
+    }
+    
+    /* Ensure the logo letter G doesn't break layout */
+    .accent-g {
+        font-size: 4rem !important;
+    }
+
+    /* Fix Job Meta spacing */
+    .job-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .job-date {
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Even smaller screens */
+    .main-text h1 {
+        font-size: 2.5rem !important;
+    }
+    .accent-g {
+        font-size: 3rem !important;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
     }
 }
