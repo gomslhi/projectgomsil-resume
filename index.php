@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomgom Silalahi - DevOps Engineer</title>
+    <!-- Favicon dengan huruf 'g' yang modern -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
