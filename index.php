@@ -39,7 +39,6 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
                 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-greeting">Hi there!</p> 
                 <p class="intro-bio">I'm an IT professional with over 6 years of experience managing the full spectrum of IT Infrastructure and databases to scalable DevOps pipelines. I specialize in turning complex architecture into stable, well-monitored, and stress-free environments for software delivery.</p>
                 <p class="intro-cta">Drop a message to say hi!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
