@@ -190,11 +190,15 @@ html {
     font-size: 1.15rem;
     letter-spacing: 0.5px;
     text-transform: none;
-    line-height: 1.6 !important;
+    line-height: 1.6;
     margin: 0.5rem 0 1.5rem 0;
-    text-align: justify !important;
-    text-justify: inter-word;
     max-width: 600px;
+
+    /* Paksa lebar penuh agar batas kanan-kirinya jelas */
+    width: 100%;
+
+    /* Cukup gunakan ini, hapus text-justify: inter-word */
+    text-align: justify;
 }
 
 .intro-cta {
