@@ -39,7 +39,9 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
                 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p>Hi there! I’m an IT professional with over 6 years of experience managing the full spectrum of IT Infrastructure and databases to scalable DevOps pipelines. I specialize in turning complex architecture into stable, well-monitored, and stress-free environments for software delivery. Drop a message to say hi!</p>
+                <p>Hi there!</p> 
+                <p>I’m an IT professional with over 6 years of experience managing the full spectrum of IT Infrastructure and databases to scalable DevOps pipelines. I specialize in turning complex architecture into stable, well-monitored, and stress-free environments for software delivery.</p>
+                <p>Drop a message to say hi!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
             </div>
 
