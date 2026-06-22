@@ -169,13 +169,31 @@ html {
     display: inline-block;
     text-shadow: -4px 0 var(--accent-pink);
 }
-
-.main-text p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    letter-spacing: 3px;
+.intro-greeting {
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 1.5rem 0 3rem 0;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.intro-bio {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    line-height: 1.7;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.intro-cta {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 1.5rem 0 2rem 0;
 }
 
 .contact-btn {
