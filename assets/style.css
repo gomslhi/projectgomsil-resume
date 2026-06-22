@@ -257,7 +257,7 @@ html {
     margin: 5rem auto 0 auto;
     /* Centered in the screen */
     padding: 0 5%;
-    padding-bottom: 60vh;
+    padding-bottom: 5rem;
     /* Extra blank space at the bottom so the last section can scroll up to the top */
 }
 
