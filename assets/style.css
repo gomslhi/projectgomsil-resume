@@ -192,6 +192,8 @@ html {
     text-transform: none;
     line-height: 1.7;
     margin: 0.5rem 0 1.5rem 0;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .intro-cta {
