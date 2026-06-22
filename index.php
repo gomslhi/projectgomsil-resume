@@ -39,11 +39,11 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
                 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p>Cloud Infrastructure / Automation Expert</p>
+                <p>Hi there! I’m an IT professional with over 6 years of experience managing the full spectrum of IT Infrastructure and databases to scalable DevOps pipelines. I specialize in turning complex architecture into stable, well-monitored, and stress-free environments for software delivery. Drop a message to say hi!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
             </div>
 
-            <a href="mailto:gomgomsilalahi50@gmail.com" class="contact-btn">Contact me!</a>
+            <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact me!</a>
         </div>
         
         <div class="scroll-indicator left">scroll down &darr;</div>
