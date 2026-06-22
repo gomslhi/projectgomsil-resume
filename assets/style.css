@@ -1,12 +1,12 @@
 :root {
     /* Light Theme (Default) */
-    --bg-main: #FFFFFF; 
-    --text-primary: #111111; 
-    --text-secondary: #666666; 
-    --accent-cyan: #0055FF; 
-    --accent-blue: #0055FF; 
+    --bg-main: #FFFFFF;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --accent-cyan: #0055FF;
+    --accent-blue: #0055FF;
     --accent-pink: #FF0055;
-    --border-color: #E5E5E5; 
+    --border-color: #E5E5E5;
     --nav-bg: rgba(255, 255, 255, 0.85);
     --nav-border: rgba(0, 0, 0, 0.05);
     --tag-bg: #F8F9FA;
@@ -21,7 +21,8 @@
     --text-primary: #FFFFFF;
     --text-secondary: #888888;
     --accent-cyan: #08FDD8;
-    --accent-blue: #08FDD8; /* Using cyan alias to keep style consistent */
+    --accent-blue: #08FDD8;
+    /* Using cyan alias to keep style consistent */
     --accent-pink: #FD2155;
     --border-color: #33363D;
     --nav-bg: rgba(0, 0, 0, 0.85);
@@ -48,7 +49,8 @@ html {
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Extremely high z-index to always stay on top */
+    z-index: 1000;
+    /* Extremely high z-index to always stay on top */
     width: 100%;
     background: var(--nav-bg);
     backdrop-filter: blur(10px);
@@ -80,9 +82,12 @@ html {
 .logo-img {
     width: 36px;
     height: 36px;
-    border-radius: 50%; /* Perfect circle */
-    object-fit: cover; /* Prevents stretching */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 50%;
+    /* Perfect circle */
+    object-fit: cover;
+    /* Prevents stretching */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
 
 .logo span {
@@ -128,7 +133,8 @@ html {
     padding: 0 5%;
     min-height: 100vh;
     overflow: hidden;
-    margin: -100px auto 0 auto; /* pull up under navbar */
+    margin: -100px auto 0 auto;
+    /* pull up under navbar */
     padding-top: 100px;
     max-width: 1400px;
 }
@@ -169,6 +175,7 @@ html {
     display: inline-block;
     text-shadow: -4px 0 var(--accent-pink);
 }
+
 .intro-greeting {
     color: var(--accent-cyan);
     font-size: 1.1rem;
@@ -234,16 +241,26 @@ html {
 }
 
 @keyframes bounce {
-    0%, 100% { bottom: 40px; }
-    50% { bottom: 30px; }
+
+    0%,
+    100% {
+        bottom: 40px;
+    }
+
+    50% {
+        bottom: 30px;
+    }
 }
 
 /* Sequential Sections Container - Medium Style */
 .tabs-container {
-    max-width: 740px; /* Narrower width for reading comfort like Medium */
-    margin: 5rem auto 0 auto; /* Centered in the screen */
+    max-width: 740px;
+    /* Narrower width for reading comfort like Medium */
+    margin: 5rem auto 0 auto;
+    /* Centered in the screen */
     padding: 0 5%;
-    padding-bottom: 60vh; /* Extra blank space at the bottom so the last section can scroll up to the top */
+    padding-bottom: 60vh;
+    /* Extra blank space at the bottom so the last section can scroll up to the top */
 }
 
 
@@ -264,7 +281,8 @@ html {
     cursor: pointer;
     position: relative;
     transition: color 0.3s;
-    text-decoration: none; /* Add this because they are now anchor tags */
+    text-decoration: none;
+    /* Add this because they are now anchor tags */
     display: inline-block;
 }
 
@@ -285,6 +303,7 @@ html {
     border-bottom: 1px solid var(--border-color);
     letter-spacing: 1px;
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -361,7 +380,8 @@ html {
     margin-bottom: 1rem;
 }
 
-.job-item ul, .job-item p {
+.job-item ul,
+.job-item p {
     color: var(--text-secondary);
     padding-left: 1.2rem;
     margin: 0;
@@ -378,18 +398,23 @@ html {
         text-align: center;
         gap: 3rem;
     }
+
     .line-decor {
         margin: 0 auto 2rem;
     }
+
     .hero-center {
         order: -1;
     }
+
     .scroll-btn {
         margin: 0 auto;
     }
+
     .side-info {
         text-align: center;
     }
+
     .tab-header {
         flex-wrap: wrap;
         justify-content: center;
@@ -397,23 +422,25 @@ html {
 }
 
 @media (max-width: 768px) {
+
     /* Fix Navbar for Mobile */
     .navbar-inner {
         flex-direction: column;
         padding: 1rem 5%;
         gap: 1rem;
     }
-    
+
     .nav-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
     }
-    
+
     .theme-btn {
         margin-left: 0;
-        width: 100%; /* Make button full width on mobile for easier tapping */
+        width: 100%;
+        /* Make button full width on mobile for easier tapping */
     }
 
     /* Fix Giant Hero Text for Mobile */
@@ -421,7 +448,7 @@ html {
         font-size: 3.5rem !important;
         line-height: 1.1 !important;
     }
-    
+
     /* Ensure the logo letter G doesn't break layout */
     .accent-g {
         font-size: 4rem !important;
@@ -432,7 +459,7 @@ html {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .job-date {
         margin-top: 0.3rem;
         margin-bottom: 0.5rem;
@@ -440,13 +467,16 @@ html {
 }
 
 @media (max-width: 480px) {
+
     /* Even smaller screens */
     .main-text h1 {
         font-size: 2.5rem !important;
     }
+
     .accent-g {
         font-size: 3rem !important;
     }
+
     .nav-links a {
         font-size: 0.9rem;
     }
