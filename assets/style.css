@@ -176,15 +176,6 @@ html {
     text-shadow: -4px 0 var(--accent-pink);
 }
 
-.intro-greeting {
-    color: var(--accent-cyan);
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 1.5rem 0 0.5rem 0;
-}
-
 .intro-bio {
     color: var(--text-secondary);
     font-size: 1.15rem;

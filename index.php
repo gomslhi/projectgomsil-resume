@@ -39,7 +39,7 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
                 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing the full spectrum of IT Infrastructure and databases to scalable DevOps pipelines. I specialize in turning complex architecture into stable, well-monitored, and stress-free environments for software delivery.</p>
+                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing the full spectrum of IT Infrastructure and databases to scalable DevOps pipelines. I specialize in turning complex architecture into stable, well-monitored, and stress-free environments for software delivery.I'm not an Expert but I love to discuss and learn something new</p>
                 <p class="intro-cta">Drop a message to say hi!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
             </div>
@@ -130,42 +130,57 @@
 
             <!-- SKILLS SECTION -->
             <div class="content-section" id="skills">
-                <h2 class="section-title">My Skills</h2>
+                <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-group">
                         <h4>Cloud & Containers</h4>
                         <div class="tags">
-                            <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>CI/CD & Automation</h4>
                         <div class="tags">
-                            <span class="tag">GIT</span><span class="tag">Jenkins</span><span class="tag">Sonarqube</span><span class="tag">Infisical</span>
+                            <span class="tag">GIT</span>
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">Sonarqube</span>
+                            <span class="tag">Infisical</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Scripting</h4>
                         <div class="tags">
-                            <span class="tag">Bash</span><span class="tag">PowerShell</span><span class="tag">Groovy</span><span class="tag">SQL</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">PowerShell</span>
+                            <span class="tag">Groovy</span>
+                            <span class="tag">SQL</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Server & OS</h4>
                         <div class="tags">
-                            <span class="tag">Windows Server</span><span class="tag">RHEL/CentOS</span>
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">RHEL/CentOS</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Database</h4>
                         <div class="tags">
-                            <span class="tag">PostgreSQL</span><span class="tag">MSSQL</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MSSQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">MongoDB</span>
                         </div>
                     </div>
                     <div class="skill-group">
                         <h4>Networking & Sec</h4>
                         <div class="tags">
-                            <span class="tag">Mikrotik</span><span class="tag">Cisco</span><span class="tag">Wazuh</span><span class="tag">Kaspersky</span>
+                            <span class="tag">Mikrotik</span>
+                            <span class="tag">Cisco</span>
+                            <span class="tag">Wazuh</span>
+                            <span class="tag">Kaspersky</span>
                         </div>
                     </div>
                 </div>
