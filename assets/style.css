@@ -190,10 +190,11 @@ html {
     font-size: 1.15rem;
     letter-spacing: 0.5px;
     text-transform: none;
-    line-height: 1.7;
+    line-height: 1.6;
     margin: 0.5rem 0 1.5rem 0;
     text-align: justify;
     text-justify: inter-word;
+    max-width: 600px;
 }
 
 .intro-cta {
