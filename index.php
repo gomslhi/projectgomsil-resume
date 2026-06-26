@@ -68,8 +68,8 @@
                         </div>
                         <div class="job-company">PT Great Eastern General Insurance</div>
                         <ul>
-                            <li>Orchestrated end-to-end application deployments, significantly contributing to efficient development cycles and smooth production releases.Managed end-to-end application deployment, ensuring smooth releases.</li>
-                            <li>Performed monitoring of application performance and proactively handled issues to maintain high system availability.Maintained high system availability and stability through proactive application performance monitoring, comprehensive incident troubleshooting, and root cause analysis.</li>
+                            <li>Orchestrated end-to-end application deployments, significantly contributing to efficient development cycles and smooth production releases.</li>
+                            <li>Performed monitoring of application performance and proactively handled issues to maintain high system availability and stability through proactive application performance monitoring, comprehensive incident troubleshooting, and root cause analysis.</li>
                             <li>Fostered close collaboration with development teams, business analysts, and key stakeholders to deliver core application enhancements and new business features.</li>
                             <li>Overseas multi-platform database administration for MySQL, MSSQL, and IBM DB2; specializing in query optimization, performance tuning, and secure data provisioning for cross-functional stakeholders.</li>
                             
