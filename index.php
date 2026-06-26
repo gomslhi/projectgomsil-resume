@@ -39,7 +39,7 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
                 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing IT infrastructure, databases, and DevOps methodologies. My focus is on turning complex setups into clean, well-monitored environments.<br> I always welcome a collaborative approach—sharing insights with other engineers and learning new tools along the way.</p>
+                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing IT Infrastructure, Databases, and DevOps Methodologies. My focus is on turning complex setups into clean, well-monitored environments.<br> I always welcome a collaborative approach—sharing insights with other engineers and learning new tools along the way.</p>
                 <p class="intro-cta">Drop a message to say hi!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
             </div>
@@ -68,9 +68,11 @@
                         </div>
                         <div class="job-company">PT Great Eastern General Insurance</div>
                         <ul>
-                            <li>Managed end-to-end application deployment using Docker and JBoss RedHat, ensuring smooth releases.</li>
-                            <li>Performed monitoring of application performance and proactively handled issues to maintain high system availability.</li>
-                            <li>Supported automation and optimization of deployment pipelines, contributing to more efficient development cycles.</li>
+                            <li>Orchestrated end-to-end application deployments using Docker and JBoss RedHat, significantly contributing to efficient development cycles and smooth production releases.Managed end-to-end application deployment, ensuring smooth releases.</li>
+                            <li>Performed monitoring of application performance and proactively handled issues to maintain high system availability.Maintained high system availability and stability through proactive application performance monitoring, comprehensive incident troubleshooting, and root cause analysis.</li>
+                            <li>Fostered close collaboration with development teams, business analysts, and key stakeholders to deliver core application enhancements and new business features.</li>
+                            <li>Supported automation and optimization of deployment pipelines, contributing to more efficient development cycles.Fostered close collaboration with development teams, business analysts, and key stakeholders to deliver core application enhancements and new business features.Overseas multi-platform database administration for MySQL, MSSQL, and IBM DB2; specializing in query optimization, performance tuning, and secure data provisioning for cross-functional stakeholders.Overseas multi-platform database administration for IBM DB2, MySQL, and MSSQL; specializing in query optimization, performance tuning, and secure data provisioning for cross-functional stakeholders.</li>
+                            
                         </ul>
                     </div>
                     <!-- Equity Life 1 -->
