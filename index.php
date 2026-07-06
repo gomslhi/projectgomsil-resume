@@ -39,7 +39,7 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
                 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing IT Infrastructure, Databases, and DevOps Methodologies. My focus is on turning complex setups into clean, well-monitored environments.<br> I always welcome a collaborative approach—sharing insights with other engineers and learning new tools along the way.</p>
+                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing IT Infrastructure, Databases, and DevOps Methodologies. My focus is on turning complex setups into clean, well-monitored environments.<br> I'm not the expert but I always welcome a collaborative approach—sharing insights with other engineers and learning new tools along the way.</p>
                 <p class="intro-cta">Drop a message to say hi!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
             </div>
@@ -101,8 +101,13 @@
                         </div>
                         <div class="job-company">PT Equity Life Indonesia</div>
                         <ul>
-                            <li>Administered Windows Server (AD, DNS, DFS) and Linux Server.</li>
-                            <li>Performed database administration (PostgreSQL, MSSQL): query optimization, replication, backup-restore.</li>
+                            <li>Maintained and administered critical Windows Server infrastructures (AD, DNS, DFS, GPO, Quota Management,etc) and Linux Server environments.</li>
+                            <li>Managed comprehensive database administration for MS SQL and PostgreSQL, executing advanced query optimization, patch deployment, performance tuning, data replication, robust backup/restore protocols, and database security hardening.</li>
+                            <li>Implemented strict server hardening and proactive monitoring systems for both virtual machines (VMs) and bare-metal servers, ensuring rigorous compliance and enterprise security.</li>
+                            <li>Managed and fine-tuned IBM WebSphere application servers to facilitate seamless application deployments and ensure optimal performance.</li>
+                            <li>Orchestrated application deployments across containerized environments using Docker, as well as IIS web servers and Kong API Gateways.</li>
+                            <li>Administered Kaspersky Security Center (KSC) by driving endpoint installation, critical updates, policy deployments, and automating mass application distribution while enforcing robust access controls, threat prevention, and reporting.</li>
+                            <li>Administered and continuously monitored dedicated SFTP servers to safeguard and guarantee secure data exchange.</li>
                         </ul>
                     </div>
                     <!-- Equity Life 3 -->
@@ -113,8 +118,13 @@
                         </div>
                         <div class="job-company">PT Equity Life Indonesia</div>
                         <ul>
-                            <li>Provided maintenance and troubleshooting for hardware and network devices.</li>
-                            <li>Designed and implemented secure VPN connections (EOIP Tunnel + IPSec, L2TP VPN).</li>
+                            <li>Maintained and troubleshot corporate hardware (PCs, laptops, printers, scanners) and core network infrastructure (routers, access points, distribution switches) to ensure peak operational efficiency.</li>
+                            <li>Monitored and resolved technical criticalities on the MDaemon email server and Cisco corporate phone systems, minimizing communication downtime.</li>
+                            <li>Installed, configured, and troubleshot core enterprise applications, strictly aligning with business continuity and operational standards.</li>
+                            <li>Monitored, upgraded, and optimized network infrastructure (TCP/IP, routing, switching, VLAN, cabling) and network security policies (Firewalls) utilizing MikroTik and Cisco devices across HQ and all branch offices.</li>
+                            <li>Designed and deployed highly secure VPN architectures, configuring EoIP Tunnels with IPsec to connect 11 branch offices to HQ and establishing L2TP VPN solutions for remote WFH users via MikroTik.</li>
+                            <li>Created OSPF routing protocols between remote branches and the Head Office using MikroTik routers.</li>
+                            <li>Collaborated within a team to architect secure branch-to-HQ network connectivity using advanced VLAN over VPN configurations (L2TP BCP on MikroTik).</li>
                         </ul>
                     </div>
                 </div>
