@@ -385,10 +385,12 @@ html {
     color: var(--text-secondary);
     padding-left: 1.2rem;
     margin: 0;
+    text-align: justify;
 }
 
 .job-item li {
     margin-bottom: 0.5rem;
+    text-align: justify;
 }
 
 /* Responsive Design for Mobile */
