@@ -83,9 +83,14 @@
                         </div>
                         <div class="job-company">PT Equity Life Indonesia</div>
                         <ul>
-                            <li>Implemented CI/CD automation pipelines for SIT, UAT, and Production environments using Git, Jenkins, Secret Management, and SonarQube.</li>
-                            <li>Managed and deployed applications on Docker, IIS, and Kong API Gateway.</li>
-                            <li>Monitored VMware vCenter and applied security hardening for VMs and servers.</li>
+                            <li>Designed and implemented end-to-end CI/CD automation pipelines for SIT, UAT, and Production environments leveraging Git, Jenkins, Secret Management, and SonarQube, significantly reducing almost 95% manual overhead and deployment errors.</li>
+                            <li>Partnered closely with development and QA teams to streamline software delivery pipelines, accelerate release cycles, and optimize deployment processes.</li>
+                            <li>Managed, scaled, and deployed enterprise applications on Docker containers, IIS servers, and Kong API Gateways.</li>
+                            <li>Maintained and administered critical Windows Server infrastructures (AD, DNS, DFS, GPO, Quota Management) and Linux Server environments.</li>
+                            <li>Manage and monitored enterprise virtualization via vCenter, applying rigorous security hardening to VMs and physical servers to elevate reliability and compliance metrics.</li>
+                            <li>Supervised and executed robust system and database backup strategies, ensuring seamless replication to the Disaster Recovery (DR) site and executing disaster recovery procedures via Veeam Backup & Replication.</li>
+                            <li>Managed and monitored critical middleware infrastructures including IBM WebSphere, alongside secure FTP and SFTP transmission servers.</li>
+                            <li>Handled end-to-end database administration for PostgreSQL, driving efficient query management, scheduled patch deployments, and fail-safe backup/restore operations.</li>
                         </ul>
                     </div>
                     <!-- Equity Life 2 -->
