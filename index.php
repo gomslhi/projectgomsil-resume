@@ -58,7 +58,7 @@
 
             <!-- EXPERIENCE SECTION -->
             <div class="content-section" id="experience">
-                <h2 class="section-title">Work Experience</h2>
+                <h2 class="section-title">Professional Experience</h2>
                 <div class="timeline">
                     <!-- Great Eastern -->
                     <div class="job-item">
