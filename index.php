@@ -20,7 +20,7 @@
             </div>
             <div class="nav-links">
                 <a href="#home">Home</a>
-                <a href="#experience">Work Experience</a>
+                <a href="#experience">Professional Experience</a>
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
