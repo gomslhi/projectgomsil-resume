@@ -68,7 +68,7 @@
                             </div>
                             <div class="company-details">
                                 <h3>PT Great Eastern General Insurance</h3>
-                                <p>PT Great Eastern General Insurance Indonesia is a general insurance company owned by Great Eastern General Insurance Limited which is a wholly owned subsidiary of Great Eastern Holdings. Founded in 1908, Great Eastern is an established and trusted market leader in Singapore and Malaysia. Great Eastern is a subsidiary of OCBC, Singapore's oldest bank, having been established since 1932.</p>
+                                <p>PT Great Eastern General Insurance Indonesia is a general insurance company owned by Great Eastern General Insurance Limited which is a wholly owned subsidiary of Great Eastern Holdings. Founded in 1908, Great Eastern is a subsidiary of OCBC, Singapore's oldest bank, having been established since 1932.</p>
                             </div>
                         </div>
                         <div class="company-roles">
