@@ -93,7 +93,7 @@
                             <div class="company-logo-container">
                                 <img src="assets/eli.png" alt="Equity Life Indonesia">
                             </div>
-                            <div class="    ">
+                            <div class="company-details">
                                 <h3>PT Equity Life Indonesia</h3>
                                 <p>PT Equity Life Indonesia is the Insurance company providing its services in Life Insurance, Health Insurance & Pension Fund. Established in 1987, with more than 34 valuable years in service, Equity Life Indonesia has provided life and health protection for over 3 million individuals and group customers in cities all over Indonesia.</p>
                             </div>
