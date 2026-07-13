@@ -24,7 +24,7 @@
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
                 <a href="#education">Education</a>
-                <a href="#Skills & Tools">Skills & Tools</a>
+                <a href="#Skills">Skills & Tools</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
@@ -224,7 +224,7 @@
             </div>
 
             <!-- SKILLS SECTION -->
-            <div class="content-section" id="Skills & Tools">
+            <div class="content-section" id="Skills">
                 <h2 class="section-title">Skills & Tools</h2>
                 <div class="skills-grid">
                     <div class="skill-group">
