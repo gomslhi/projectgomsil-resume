@@ -24,7 +24,7 @@
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
                 <a href="#education">Education</a>
-                <a href="#skills">Skills & Tools</a>
+                <a href="#Skills & Tools">Skills & Tools</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
@@ -268,7 +268,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h4>Database</h4>
+                        <h4>Databases</h4>
                         <div class="tags">
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">MSSQL</span>
