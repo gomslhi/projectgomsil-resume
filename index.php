@@ -24,7 +24,7 @@
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
                 <a href="#education">Education</a>
-                <a href="#Skills & Tools">Skills</a>
+                <a href="#skills">Skills & Tools</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
