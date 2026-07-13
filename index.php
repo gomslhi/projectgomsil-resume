@@ -68,7 +68,7 @@
                             </div>
                             <div class="company-details">
                                 <h3>PT Great Eastern General Insurance</h3>
-                                <p>A leading general insurance provider delivering comprehensive risk management solutions and exceptional customer service across the region.</p>
+                                <p>PT Great Eastern General Insurance Indonesia is a general insurance company owned by Great Eastern General Insurance Limited which is a wholly owned subsidiary of Great Eastern Holdings. Founded in 1908, Great Eastern is an established and trusted market leader in Singapore and Malaysia. Great Eastern is a subsidiary of OCBC, Singapore's oldest bank, having been established since 1932.</p>
                             </div>
                         </div>
                         <div class="company-roles">
@@ -93,9 +93,9 @@
                             <div class="company-logo-container">
                                 <img src="assets/eli.png" alt="Equity Life Indonesia">
                             </div>
-                            <div class="company-details">
+                            <div class="    ">
                                 <h3>PT Equity Life Indonesia</h3>
-                                <p>A prominent life insurance company in Indonesia committed to securing futures through innovative financial protection plans.</p>
+                                <p>PT Equity Life Indonesia is the Insurance company providing its services in Life Insurance, Health Insurance & Pension Fund. Established in 1987, with more than 34 valuable years in service, Equity Life Indonesia has provided life and health protection for over 3 million individuals and group customers in cities all over Indonesia.</p>
                             </div>
                         </div>
                         <div class="company-roles">
