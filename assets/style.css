@@ -332,25 +332,92 @@ html {
 
 .timeline {
     border-left: 2px solid var(--border-color);
-    padding-left: 2rem;
+    padding-left: 2.5rem;
     margin-left: 1rem;
+}
+
+.company-group {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* The big dot for the company */
+.company-header::before {
+    content: '';
+    position: absolute;
+    left: -3.35rem; /* Exactly on the timeline border */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-blue);
+    border: 4px solid var(--bg-main);
+    z-index: 2;
+}
+
+.company-logo-container {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #FFFFFF; /* Ensure white background for logos */
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.company-logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 6px;
+}
+
+.company-details h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.company-details p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.company-roles {
+    padding-left: 0.5rem;
 }
 
 .job-item {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
+/* Small dot for each role inside the company */
 .job-item::before {
     content: '';
     position: absolute;
-    left: -2.4rem;
-    top: 0;
-    width: 12px;
-    height: 12px;
+    left: -2.75rem;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background-color: var(--accent-blue);
-    border: 4px solid var(--bg-main);
+    background-color: var(--border-color);
 }
 
 .job-meta {
@@ -373,11 +440,7 @@ html {
 }
 
 .job-company {
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    text-align: justify !important;
+    display: none; /* Hide the old company text if any still exist */
 }
 
 .job-item ul,

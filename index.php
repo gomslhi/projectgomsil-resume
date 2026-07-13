@@ -61,71 +61,94 @@
                 <h2 class="section-title">Professional Experience</h2>
                 <div class="timeline">
                     <!-- Great Eastern -->
-                    <div class="job-item">
-                        <div class="job-meta">
-                            <h4>DevOps Engineer</h4>
-                            <span class="job-date">May 2025 - Present</span>
+                    <div class="company-group">
+                        <div class="company-header">
+                            <div class="company-logo-container">
+                                <img src="assets/gegi.png" alt="Great Eastern General Insurance">
+                            </div>
+                            <div class="company-details">
+                                <h3>PT Great Eastern General Insurance</h3>
+                                <p>A leading general insurance provider delivering comprehensive risk management solutions and exceptional customer service across the region.</p>
+                            </div>
                         </div>
-                        <div class="job-company">PT Great Eastern General Insurance</div>
-                        <ul>
-                            <li>Orchestrated end-to-end application deployments, significantly contributing to efficient development cycles and smooth production releases.</li>
-                            <li>Performed monitoring of application performance and proactively handled issues to maintain high system availability and stability through proactive application performance monitoring, comprehensive incident troubleshooting, and root cause analysis.</li>
-                            <li>Fostered close collaboration with development teams, business analysts, and key stakeholders to deliver core application enhancements and new business features.</li>
-                            <li>Overseas multi-platform database administration for MySQL, MSSQL, and IBM DB2 specializing in query optimization, performance tuning, and secure data provisioning for cross-functional stakeholders.</li>
-                            
-                        </ul>
+                        <div class="company-roles">
+                            <div class="job-item">
+                                <div class="job-meta">
+                                    <h4>DevOps Engineer</h4>
+                                    <span class="job-date">May 2025 - Present</span>
+                                </div>
+                                <ul>
+                                    <li>Orchestrated end-to-end application deployments, significantly contributing to efficient development cycles and smooth production releases.</li>
+                                    <li>Performed monitoring of application performance and proactively handled issues to maintain high system availability and stability through proactive application performance monitoring, comprehensive incident troubleshooting, and root cause analysis.</li>
+                                    <li>Fostered close collaboration with development teams, business analysts, and key stakeholders to deliver core application enhancements and new business features.</li>
+                                    <li>Overseas multi-platform database administration for MySQL, MSSQL, and IBM DB2 specializing in query optimization, performance tuning, and secure data provisioning for cross-functional stakeholders.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Equity Life 1 -->
-                    <div class="job-item">
-                        <div class="job-meta">
-                            <h4>DevOps Engineer</h4>
-                            <span class="job-date">Jan 2024 - May 2025</span>
+
+                    <!-- Equity Life -->
+                    <div class="company-group">
+                        <div class="company-header">
+                            <div class="company-logo-container">
+                                <img src="assets/eli.png" alt="Equity Life Indonesia">
+                            </div>
+                            <div class="company-details">
+                                <h3>PT Equity Life Indonesia</h3>
+                                <p>A prominent life insurance company in Indonesia committed to securing futures through innovative financial protection plans.</p>
+                            </div>
                         </div>
-                        <div class="job-company">PT Equity Life Indonesia</div>
-                        <ul>
-                            <li>Designed and implemented end-to-end CI/CD automation pipelines for SIT, UAT, and Production environments leveraging Git, Jenkins, Secret Management, and SonarQube, significantly reducing almost 95% manual overhead and deployment errors.</li>
-                            <li>Partnered closely with development and QA teams to streamline software delivery pipelines, accelerate release cycles, and optimize deployment processes.</li>
-                            <li>Managed, scaled, and deployed enterprise applications on Docker containers, IIS servers, and Kong API Gateways.</li>
-                            <li>Maintained and administered critical Windows Server infrastructures (AD, DNS, DFS, GPO, Quota Management) and Linux Server environments.</li>
-                            <li>Manage and monitored enterprise virtualization via vCenter, applying rigorous security hardening to VMs and physical servers to elevate reliability and compliance metrics.</li>
-                            <li>Supervised and executed robust system and database backup strategies, ensuring seamless replication to the Disaster Recovery (DR) site and executing disaster recovery procedures via Veeam Backup & Replication.</li>
-                            <li>Managed and monitored critical middleware infrastructures including IBM WebSphere, alongside secure FTP and SFTP transmission servers.</li>
-                            <li>Handled end-to-end database administration for PostgreSQL, driving efficient query management, scheduled patch deployments, and fail-safe backup/restore operations.</li>
-                        </ul>
-                    </div>
-                    <!-- Equity Life 2 -->
-                    <div class="job-item">
-                        <div class="job-meta">
-                            <h4>Sysadmin & DBA</h4>
-                            <span class="job-date">Mar 2022 - Jan 2024</span>
+                        <div class="company-roles">
+                            <!-- Role 1 -->
+                            <div class="job-item">
+                                <div class="job-meta">
+                                    <h4>DevOps Engineer</h4>
+                                    <span class="job-date">Jan 2024 - May 2025</span>
+                                </div>
+                                <ul>
+                                    <li>Designed and implemented end-to-end CI/CD automation pipelines for SIT, UAT, and Production environments leveraging Git, Jenkins, Secret Management, and SonarQube, significantly reducing almost 95% manual overhead and deployment errors.</li>
+                                    <li>Partnered closely with development and QA teams to streamline software delivery pipelines, accelerate release cycles, and optimize deployment processes.</li>
+                                    <li>Managed, scaled, and deployed enterprise applications on Docker containers, IIS servers, and Kong API Gateways.</li>
+                                    <li>Maintained and administered critical Windows Server infrastructures (AD, DNS, DFS, GPO, Quota Management) and Linux Server environments.</li>
+                                    <li>Manage and monitored enterprise virtualization via vCenter, applying rigorous security hardening to VMs and physical servers to elevate reliability and compliance metrics.</li>
+                                    <li>Supervised and executed robust system and database backup strategies, ensuring seamless replication to the Disaster Recovery (DR) site and executing disaster recovery procedures via Veeam Backup & Replication.</li>
+                                    <li>Managed and monitored critical middleware infrastructures including IBM WebSphere, alongside secure FTP and SFTP transmission servers.</li>
+                                    <li>Handled end-to-end database administration for PostgreSQL, driving efficient query management, scheduled patch deployments, and fail-safe backup/restore operations.</li>
+                                </ul>
+                            </div>
+                            <!-- Role 2 -->
+                            <div class="job-item">
+                                <div class="job-meta">
+                                    <h4>Sysadmin & DBA</h4>
+                                    <span class="job-date">Mar 2022 - Jan 2024</span>
+                                </div>
+                                <ul>
+                                    <li>Maintained and administered critical Windows Server infrastructures (AD, DNS, DFS, GPO, Quota Management,etc) and Linux Server environments.</li>
+                                    <li>Managed comprehensive database administration for MS SQL and PostgreSQL, executing advanced query optimization, patch deployment, performance tuning, data replication, robust backup/restore protocols, and database security hardening.</li>
+                                    <li>Implemented strict server hardening and proactive monitoring systems for both virtual machines (VMs) and bare-metal servers, ensuring rigorous compliance and enterprise security.</li>
+                                    <li>Managed and fine-tuned IBM WebSphere application servers to facilitate seamless application deployments and ensure optimal performance.</li>
+                                    <li>Orchestrated application deployments across containerized environments using Docker, as well as IIS web servers and Kong API Gateways.</li>
+                                    <li>Administered Kaspersky Security Center (KSC) by driving endpoint installation, critical updates, policy deployments, and automating mass application distribution while enforcing robust access controls, threat prevention, and reporting.</li>
+                                    <li>Administered and continuously monitored dedicated SFTP servers to safeguard and guarantee secure data exchange.</li>
+                                </ul>
+                            </div>
+                            <!-- Role 3 -->
+                            <div class="job-item">
+                                <div class="job-meta">
+                                    <h4>Network and Technical Support</h4>
+                                    <span class="job-date">Dec 2020 - Mar 2022</span>
+                                </div>
+                                <ul>
+                                    <li>Maintained and troubleshot corporate hardware (PCs, laptops, printers, scanners) and core network infrastructure (routers, access points, distribution switches) to ensure peak operational efficiency.</li>
+                                    <li>Monitored and resolved technical criticalities on the MDaemon email server and Cisco corporate phone systems, minimizing communication downtime.</li>
+                                    <li>Installed, configured, and troubleshot core enterprise applications, strictly aligning with business continuity and operational standards.</li>
+                                    <li>Monitored, upgraded, and optimized network infrastructure (TCP/IP, routing, switching, VLAN, cabling) and network security policies (Firewalls) utilizing MikroTik and Cisco devices across HQ and all branch offices.</li>
+                                    <li>Designed and deployed highly secure VPN architectures, configuring EoIP Tunnels with IPsec to connect 11 branch offices to HQ and establishing L2TP VPN solutions for remote WFH users via MikroTik.</li>
+                                    <li>Created OSPF routing protocols between remote branches and the Head Office using MikroTik routers.</li>
+                                    <li>Collaborated within a team to architect secure branch-to-HQ network connectivity using advanced VLAN over VPN configurations (L2TP BCP on MikroTik).</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="job-company">PT Equity Life Indonesia</div>
-                        <ul>
-                            <li>Maintained and administered critical Windows Server infrastructures (AD, DNS, DFS, GPO, Quota Management,etc) and Linux Server environments.</li>
-                            <li>Managed comprehensive database administration for MS SQL and PostgreSQL, executing advanced query optimization, patch deployment, performance tuning, data replication, robust backup/restore protocols, and database security hardening.</li>
-                            <li>Implemented strict server hardening and proactive monitoring systems for both virtual machines (VMs) and bare-metal servers, ensuring rigorous compliance and enterprise security.</li>
-                            <li>Managed and fine-tuned IBM WebSphere application servers to facilitate seamless application deployments and ensure optimal performance.</li>
-                            <li>Orchestrated application deployments across containerized environments using Docker, as well as IIS web servers and Kong API Gateways.</li>
-                            <li>Administered Kaspersky Security Center (KSC) by driving endpoint installation, critical updates, policy deployments, and automating mass application distribution while enforcing robust access controls, threat prevention, and reporting.</li>
-                            <li>Administered and continuously monitored dedicated SFTP servers to safeguard and guarantee secure data exchange.</li>
-                        </ul>
-                    </div>
-                    <!-- Equity Life 3 -->
-                    <div class="job-item">
-                        <div class="job-meta">
-                            <h4>Network and Technical Support</h4>
-                            <span class="job-date">Dec 2020 - Mar 2022</span>
-                        </div>
-                        <div class="job-company">PT Equity Life Indonesia</div>
-                        <ul>
-                            <li>Maintained and troubleshot corporate hardware (PCs, laptops, printers, scanners) and core network infrastructure (routers, access points, distribution switches) to ensure peak operational efficiency.</li>
-                            <li>Monitored and resolved technical criticalities on the MDaemon email server and Cisco corporate phone systems, minimizing communication downtime.</li>
-                            <li>Installed, configured, and troubleshot core enterprise applications, strictly aligning with business continuity and operational standards.</li>
-                            <li>Monitored, upgraded, and optimized network infrastructure (TCP/IP, routing, switching, VLAN, cabling) and network security policies (Firewalls) utilizing MikroTik and Cisco devices across HQ and all branch offices.</li>
-                            <li>Designed and deployed highly secure VPN architectures, configuring EoIP Tunnels with IPsec to connect 11 branch offices to HQ and establishing L2TP VPN solutions for remote WFH users via MikroTik.</li>
-                            <li>Created OSPF routing protocols between remote branches and the Head Office using MikroTik routers.</li>
-                            <li>Collaborated within a team to architect secure branch-to-HQ network connectivity using advanced VLAN over VPN configurations (L2TP BCP on MikroTik).</li>
-                        </ul>
                     </div>
                 </div>
             </div>
