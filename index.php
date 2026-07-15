@@ -221,7 +221,8 @@
                                 <h4>Bachelor Degree in Electrical Engineering</h4>
                                 <span class="job-date">Aug 2016 - Sep 2020</span>
                             </div>
-                            <p>GPA: 3.07/4.00. Published a final project entitled "Vehicle Tracking System (VTS)
+                            <p>GPA: 3.07/4.00</p> 
+                            <p>Published a final project entitled "Vehicle Tracking System (VTS)
                                 real-time
                                 positioning based on GPS with Multihop LoRa Communication".</p>
                         </div>
