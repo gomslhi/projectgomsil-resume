@@ -211,14 +211,20 @@
             <div class="content-section" id="education">
                 <h2 class="section-title">Education</h2>
                 <div class="timeline">
-                    <div class="job-item">
-                        <div class="job-meta">
-                            <h4>Bachelor Degree in Electrical Engineering</h4>
-                            <span class="job-date">Aug 2016 - Sep 2020</span>
+                    <div class="company-header">
+                        <div class="company-logo-container">
+                            <img src="assets/it_del.png" alt="Great Eastern General Insurance">
                         </div>
-                        <div class="job-company">Del Institute of Technology</div>
-                        <p>GPA: 3.07/4.00. Published a final project entitled "Vehicle Tracking System (VTS) real-time
-                            positioning based on GPS with Multihop LoRa Communication".</p>
+                        <div class="company-details">
+                            <h3>Del Institute of Technology</h3>
+                            <div class="job-meta">
+                                <h4>Bachelor Degree in Electrical Engineering</h4>
+                                <span class="job-date">Aug 2016 - Sep 2020</span>
+                            </div>
+                            <p>GPA: 3.07/4.00. Published a final project entitled "Vehicle Tracking System (VTS)
+                                real-time
+                                positioning based on GPS with Multihop LoRa Communication".</p>
+                        </div>
                     </div>
                 </div>
             </div>
