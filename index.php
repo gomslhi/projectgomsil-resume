@@ -59,8 +59,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="scroll-indicator left">scroll down &darr;</div>
     </div>
 
     <!-- Section Links -->

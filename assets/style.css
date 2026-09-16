@@ -129,13 +129,11 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 5%;
-    min-height: 100vh;
+    justify-content: flex-start;
+    padding: 3rem 5% 1rem 5%;
+    min-height: auto;
     overflow: hidden;
-    margin: -100px auto 0 auto;
-    /* pull up under navbar */
-    padding-top: 100px;
+    margin: 0 auto;
     max-width: 1400px;
 }
 
@@ -276,42 +274,15 @@ html {
 }
 
 .scroll-indicator {
-    position: absolute;
-    bottom: 40px;
-    color: var(--text-secondary);
-    writing-mode: vertical-rl;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    animation: bounce 2s infinite;
-}
-
-.scroll-indicator.left {
-    left: 20px;
-    transform: rotate(180deg);
-}
-
-.scroll-indicator.right {
-    right: 20px;
-}
-
-@keyframes bounce {
-
-    0%,
-    100% {
-        bottom: 40px;
-    }
-
-    50% {
-        bottom: 30px;
-    }
+    display: none;
 }
 
 /* Sequential Sections Container - Medium Style */
 .tabs-container {
     max-width: 740px;
     /* Narrower width for reading comfort like Medium */
-    margin: 5rem auto 0 auto;
-    /* Centered in the screen */
+    margin: 2.5rem auto 0 auto;
+    /* Centered in the screen with balanced top spacing */
     padding: 0 5%;
     padding-bottom: 5rem;
     /* Extra blank space at the bottom so the last section can scroll up to the top */
