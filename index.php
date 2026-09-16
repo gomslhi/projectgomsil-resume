@@ -58,24 +58,6 @@
                     </a>
                 </div>
             </div>
-
-            <!-- Key Metrics / Tech Highlights (No Clichés) -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">6+</span>
-                    <span class="stat-label">Years Enterprise Exp.</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">95%</span>
-                    <span class="stat-label">CI/CD Automation</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">99.9%</span>
-                    <span class="stat-label">Uptime & Stability</span>
-                </div>
-            </div>
         </div>
 
         <a href="#experience" class="hero-scroll-cue">
@@ -337,7 +319,7 @@
     </div>
     <!-- Premium Smooth Scroll Animation -->
     <script>
-        document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('.nav-links a[href^="#"], .hero-scroll-cue').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
