@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gomgom Silalahi - DevOps Engineer</title>
+    <title>Gomgom Silalahi - IT Infrastructure & DevOps</title>
     <!-- Favicon dengan huruf 'g' yang modern -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
@@ -37,7 +37,7 @@
 
             <div class="main-text">
                 <div class="html-tag">&lt;h1&gt;</div>
-                <h1>Hi,<br>I'm <span class="accent-g">G</span>omgom,<br>DevOps Engineer</h1>
+                <h1>Hi,<br>I'm <span class="accent-g">G</span>omgom</h1>
                 <div class="html-tag">&lt;/h1&gt;</div>
 
                 <div class="html-tag">&lt;p&gt;</div>
