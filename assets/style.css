@@ -124,14 +124,15 @@ html {
     border-color: var(--accent-cyan);
 }
 
-/* Hero Section */
+/* Hero Section - Full Viewport with Clean Landing */
 .hero {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 3rem 5% 1rem 5%;
-    min-height: auto;
+    justify-content: space-between;
+    padding: 3rem 5% 2rem 5%;
+    min-height: calc(100vh - 75px);
+    box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
     max-width: 1400px;
@@ -273,6 +274,78 @@ html {
     transform: translateY(-2px);
 }
 
+/* Stats Highlight Strip */
+.hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--border-color);
+    max-width: 600px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 0.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 38px;
+    background-color: var(--border-color);
+}
+
+/* Scroll Cue at Bottom of Hero */
+.hero-scroll-cue {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.82rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 5%;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.hero-scroll-cue:hover {
+    color: var(--accent-cyan);
+    transform: translateY(3px);
+}
+
+.hero-scroll-cue .scroll-arrow {
+    display: inline-block;
+    animation: bounceDown 2s infinite;
+    font-size: 1rem;
+}
+
+@keyframes bounceDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
+
 .scroll-indicator {
     display: none;
 }
@@ -281,11 +354,10 @@ html {
 .tabs-container {
     max-width: 740px;
     /* Narrower width for reading comfort like Medium */
-    margin: 2.5rem auto 0 auto;
-    /* Centered in the screen with balanced top spacing */
-    padding: 0 5%;
-    padding-bottom: 5rem;
-    /* Extra blank space at the bottom so the last section can scroll up to the top */
+    margin: 0 auto;
+    /* Flush below the hero fold */
+    padding: 4rem 5% 5rem 5%;
+    /* Generous top padding when scrolled into view */
 }
 
 
@@ -590,8 +662,28 @@ html {
         margin-top: 0.5rem;
     }
 
-    .scroll-indicator {
-        display: none; /* Hide scroll indicator on mobile to save vertical space */
+    .hero-stats {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.72rem;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .hero-scroll-cue {
+        margin-left: 0;
+        margin-top: 2rem;
     }
 
     /* Company and Job Meta Spacing */

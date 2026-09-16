@@ -58,7 +58,30 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Key Metrics / Tech Highlights (No Clichés) -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Years Enterprise Exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">CI/CD Automation</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime & Stability</span>
+                </div>
+            </div>
         </div>
+
+        <a href="#experience" class="hero-scroll-cue">
+            <span>Explore Experience</span>
+            <span class="scroll-arrow">&darr;</span>
+        </a>
     </div>
 
     <!-- Section Links -->
