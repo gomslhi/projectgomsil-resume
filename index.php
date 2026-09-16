@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css?v=2.5">
 </head>
 
 <body>
@@ -60,9 +60,14 @@
             </div>
         </div>
 
-        <a href="#experience" class="hero-scroll-cue">
-            <span>Explore Experience</span>
-            <span class="scroll-arrow">&darr;</span>
+        <a href="#experience" class="hero-scroll-indicator" aria-label="Scroll to Professional Experience" style="text-decoration: none;">
+            <span class="mouse-icon">
+                <span class="wheel-dot"></span>
+            </span>
+            <span class="scroll-label">Scroll to explore</span>
+            <svg class="scroll-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
         </a>
     </div>
 
@@ -319,7 +324,7 @@
     </div>
     <!-- Premium Smooth Scroll Animation -->
     <script>
-        document.querySelectorAll('.nav-links a[href^="#"], .hero-scroll-cue').forEach(anchor => {
+        document.querySelectorAll('.nav-links a[href^="#"], .hero-scroll-indicator').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');

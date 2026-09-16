@@ -129,8 +129,8 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3rem 5% 2rem 5%;
+    justify-content: center;
+    padding: 0 5%;
     min-height: calc(100vh - 75px);
     box-sizing: border-box;
     overflow: hidden;
@@ -274,42 +274,87 @@ html {
     transform: translateY(-2px);
 }
 
-/* Scroll Cue at Bottom of Hero */
-.hero-scroll-cue {
-    display: inline-flex;
+/* Stunning Centered Mouse & Chevron Scroll Indicator */
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.35rem;
     color: var(--text-secondary);
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-left: 5%;
-    padding: 0.5rem 0;
+    text-decoration: none !important;
+    cursor: pointer;
+    z-index: 20;
     transition: all 0.3s ease;
-    width: fit-content;
 }
 
-.hero-scroll-cue:hover {
+.hero-scroll-indicator:hover {
     color: var(--accent-cyan);
-    transform: translateY(3px);
+    transform: translateX(-50%) translateY(3px);
 }
 
-.hero-scroll-cue .scroll-arrow {
-    display: inline-block;
-    animation: bounceDown 2s infinite;
-    font-size: 1.1rem;
+.hero-scroll-indicator .mouse-icon {
+    width: 22px;
+    height: 34px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+}
+
+.hero-scroll-indicator:hover .mouse-icon {
+    border-color: var(--accent-cyan);
+}
+
+.hero-scroll-indicator .wheel-dot {
+    width: 4px;
+    height: 6px;
+    background-color: var(--accent-cyan);
+    border-radius: 2px;
+    position: absolute;
+    top: 6px;
+    animation: mouseScroll 1.8s infinite ease-in-out;
+}
+
+@keyframes mouseScroll {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+}
+
+.hero-scroll-indicator .scroll-label {
+    font-size: 0.72rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0.75;
+    margin-top: 0.15rem;
+}
+
+.hero-scroll-indicator .scroll-chevron {
     color: var(--accent-cyan);
+    animation: chevronPulse 1.8s infinite ease-in-out;
 }
 
-@keyframes bounceDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(6px); }
-}
-
-.scroll-indicator {
-    display: none;
+@keyframes chevronPulse {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(4px);
+        opacity: 1;
+    }
 }
 
 /* Sequential Sections Container - Medium Style */
@@ -624,9 +669,10 @@ html {
         margin-top: 0.5rem;
     }
 
-    .hero-scroll-cue {
-        margin-left: 0;
-        margin-top: 2rem;
+    .hero-scroll-indicator {
+        position: static;
+        transform: none;
+        margin: 2rem auto 0 auto;
     }
 
     /* Company and Job Meta Spacing */
