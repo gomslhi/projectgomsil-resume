@@ -24,7 +24,7 @@
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
                 <a href="#education">Education</a>
-                <a href="#Skills">Skills & Tools</a>
+                <a href="#skills">Skills & Tools</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
@@ -41,19 +41,26 @@
                 <div class="html-tag">&lt;/h1&gt;</div>
 
                 <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing IT Infrastructure,
-                    Databases, and DevOps Methodologies. My focus is on turning complex setups into clean,
-                    well-monitored environments.<br> I'm not the expert but I always welcome a collaborative
-                    approach—sharing insights with other engineers and learning new tools along the way.</p>
-                <p class="intro-cta">Drop a message to say hi!</p>
+                <p class="intro-bio">With over 6 years of experience across IT Infrastructure, Databases, and DevOps, I specialize in architecting automated, resilient, and well-monitored environments. I value continuous learning and strong team collaboration to deliver reliable enterprise solutions.</p>
+                <p class="intro-cta">Let's connect and collaborate!</p>
                 <div class="html-tag">&lt;/p&gt;</div>
             </div>
 
-            <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact me!</a>
+            <div class="hero-actions">
+                <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact Me</a>
+                <a href="assets/Gomgom_Silalahi_Resume.pdf" class="btn-secondary" download>Download CV</a>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/gomgom-silalahi" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25a1.62 1.62 0 0 0-1.62 1.62c0 .89.73 1.62 1.62 1.62.9 0 1.62-.73 1.62-1.62 0-.89-.72-1.62-1.62-1.62Z"/></svg>
+                    </a>
+                    <a href="https://github.com/gomgomsilalahi" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="scroll-indicator left">scroll down &darr;</div>
-        <div class="scroll-indicator right">scroll down &darr;</div>
     </div>
 
     <!-- Section Links -->
@@ -213,7 +220,7 @@
                 <div class="timeline">
                     <div class="company-header">
                         <div class="company-logo-container">
-                            <img src="assets/it_del.png" alt="Great Eastern General Insurance">
+                            <img src="assets/it_del.png" alt="Del Institute of Technology">
                         </div>
                         <div class="company-details">
                             <h3>Del Institute of Technology</h3>
@@ -231,9 +238,18 @@
             </div>
 
             <!-- SKILLS SECTION -->
-            <div class="content-section" id="Skills">
+            <div class="content-section" id="skills">
                 <h2 class="section-title">Skills & Tools</h2>
                 <div class="skills-grid">
+                    <div class="skill-group">
+                        <h4>Monitoring & Observability</h4>
+                        <div class="tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ELK Stack</span>
+                            <span class="tag">Wazuh</span>
+                        </div>
+                    </div>
                     <div class="skill-group">
                         <h4>Containers</h4>
                         <div class="tags">
@@ -309,7 +325,7 @@
                     // For Home, smooth scroll exactly to the top
                     const startPosition = window.pageYOffset;
                     const distance = -startPosition;
-                    const duration = 1200;
+                    const duration = 600;
                     let start = null;
                     function ease(t, b, c, d) {
                         t /= d / 2;
@@ -336,7 +352,7 @@
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
                 const startPosition = window.pageYOffset;
                 const distance = targetPosition - startPosition;
-                const duration = 1200; // 1.2s duration for buttery smooth feel
+                const duration = 600; // Snappy 600ms scroll duration
                 let start = null;
 
                 function ease(t, b, c, d) {

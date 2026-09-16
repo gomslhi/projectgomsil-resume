@@ -184,32 +184,39 @@ html {
     line-height: 1.6;
     margin: 0.5rem 0 1.5rem 0;
     max-width: 600px;
-
-    /* Paksa lebar penuh agar batas kanan-kirinya jelas */
     width: 100%;
-
-    /* Cukup gunakan ini, hapus text-justify: inter-word */
-    text-align: justify;
+    text-align: left;
 }
 
 .intro-cta {
     color: var(--text-primary);
     font-size: 0.95rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 500;
-    margin: 1.5rem 0 2rem 0;
+    font-weight: 600;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .contact-btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid var(--accent-cyan);
     color: var(--accent-cyan);
-    padding: 1rem 3rem;
+    padding: 0.85rem 2.2rem;
     text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
     transition: all 0.3s ease;
     background: transparent;
 }
@@ -217,6 +224,55 @@ html {
 .contact-btn:hover {
     background: var(--btn-hover-bg);
     box-shadow: var(--btn-hover-shadow);
+    color: var(--accent-cyan);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.85rem 2rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-primary);
+    background: var(--btn-hover-bg);
+    color: var(--text-primary);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.social-btn:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    transform: translateY(-2px);
 }
 
 .scroll-indicator {
@@ -384,7 +440,7 @@ html {
     font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
 }
 
 .company-roles {
@@ -437,12 +493,12 @@ html {
     color: var(--text-secondary);
     padding-left: 1.2rem;
     margin: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .job-item li {
     margin-bottom: 0.5rem;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Responsive Design for Mobile */
@@ -476,62 +532,132 @@ html {
 }
 
 @media (max-width: 768px) {
-
-    /* Fix Navbar for Mobile */
+    /* Compact Navbar for Mobile (No more 30% viewport blocking) */
     .navbar-inner {
-        flex-direction: column;
-        padding: 1rem 5%;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 5%;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+        gap: 0.5rem;
+    }
+
+    .logo-img {
+        width: 30px;
+        height: 30px;
     }
 
     .nav-links {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.5rem 0.9rem;
+        width: 100%;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 0.82rem;
     }
 
     .theme-btn {
         margin-left: 0;
-        width: 100%;
-        /* Make button full width on mobile for easier tapping */
+        width: auto;
+        padding: 0.25rem 0.6rem;
+        font-size: 0.75rem;
+        border-radius: 12px;
     }
 
-    /* Fix Giant Hero Text for Mobile */
+    /* Hero Section Mobile Adjustments */
+    .hero {
+        margin-top: 0;
+        padding-top: 2rem;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
     .main-text h1 {
-        font-size: 3.5rem !important;
+        font-size: 3.2rem !important;
         line-height: 1.1 !important;
     }
 
-    /* Ensure the logo letter G doesn't break layout */
     .accent-g {
-        font-size: 4rem !important;
+        font-size: 3.6rem !important;
     }
 
-    /* Fix Job Meta spacing */
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .contact-btn,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0.85rem 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    .scroll-indicator {
+        display: none; /* Hide scroll indicator on mobile to save vertical space */
+    }
+
+    /* Company and Job Meta Spacing */
+    .company-header {
+        gap: 1rem;
+    }
+
+    .company-logo-container {
+        width: 50px;
+        height: 50px;
+    }
+
     .job-meta {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .job-date {
-        margin-top: 0.3rem;
-        margin-bottom: 0.5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.4rem;
     }
 }
 
 @media (max-width: 480px) {
-
-    /* Even smaller screens */
     .main-text h1 {
-        font-size: 2.5rem !important;
+        font-size: 2.3rem !important;
     }
 
     .accent-g {
-        font-size: 3rem !important;
+        font-size: 2.7rem !important;
     }
 
     .nav-links a {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
+    }
+
+    .company-details h3 {
+        font-size: 1.15rem;
     }
 }
