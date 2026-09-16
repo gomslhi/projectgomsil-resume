@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=2.5">
+    <link rel="stylesheet" href="assets/style.css?v=2.6">
 </head>
 
 <body>
@@ -322,65 +322,60 @@
     </div>
     </div>
     </div>
-    <!-- Premium Smooth Scroll Animation -->
+    <!-- Lenis Smooth Scroll Engine (Momentum & Inertia for Mouse Wheel & Trackpad) -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
     <script>
+        // Initialize Lenis for buttery momentum scrolling (both scroll up & down)
+        let lenisInstance = null;
+        if (typeof Lenis !== 'undefined') {
+            lenisInstance = new Lenis({
+                duration: 1.3,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Apple-style smooth exponential deceleration
+                orientation: 'vertical',
+                gestureOrientation: 'vertical',
+                smoothWheel: true,
+                wheelMultiplier: 1,
+                touchMultiplier: 1.8,
+                infinite: false,
+            });
+
+            function raf(time) {
+                lenisInstance.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        }
+
+        // Unified smooth navigation for anchor links
         document.querySelectorAll('.nav-links a[href^="#"], .hero-scroll-indicator').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
 
+                if (lenisInstance) {
+                    if (targetId === '#home') {
+                        lenisInstance.scrollTo(0, { duration: 1.3 });
+                    } else {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                            lenisInstance.scrollTo(targetElement, { offset: -navbarHeight - 20, duration: 1.3 });
+                        }
+                    }
+                    return;
+                }
+
+                // Fallback if Lenis is not available
                 if (targetId === '#home') {
-                    // For Home, smooth scroll exactly to the top
-                    const startPosition = window.pageYOffset;
-                    const distance = -startPosition;
-                    const duration = 600;
-                    let start = null;
-                    function ease(t, b, c, d) {
-                        t /= d / 2;
-                        if (t < 1) return c / 2 * t * t * t * t + b;
-                        t -= 2;
-                        return -c / 2 * (t * t * t * t - 2) + b;
-                    }
-                    function animation(currentTime) {
-                        if (start === null) start = currentTime;
-                        const timeElapsed = currentTime - start;
-                        const run = ease(timeElapsed, startPosition, distance, duration);
-                        window.scrollTo(0, run);
-                        if (timeElapsed < duration) requestAnimationFrame(animation);
-                    }
-                    requestAnimationFrame(animation);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     return;
                 }
 
                 const targetElement = document.querySelector(targetId);
                 if (!targetElement) return;
-
-                // For other sections, account for the sticky navbar height + extra padding
                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
-                const startPosition = window.pageYOffset;
-                const distance = targetPosition - startPosition;
-                const duration = 600; // Snappy 600ms scroll duration
-                let start = null;
-
-                function ease(t, b, c, d) {
-                    t /= d / 2;
-                    if (t < 1) return c / 2 * t * t * t * t + b;
-                    t -= 2;
-                    return -c / 2 * (t * t * t * t - 2) + b;
-                }
-
-                function animation(currentTime) {
-                    if (start === null) start = currentTime;
-                    const timeElapsed = currentTime - start;
-                    const run = ease(timeElapsed, startPosition, distance, duration);
-                    window.scrollTo(0, run);
-                    if (timeElapsed < duration) {
-                        requestAnimationFrame(animation);
-                    }
-                }
-
-                requestAnimationFrame(animation);
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
             });
         });
 
