@@ -9,8 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=2.6">
+    <link rel="stylesheet" href="assets/style.css?v=3.0">
 </head>
 
 <body>
@@ -33,18 +32,12 @@
     <div class="hero" id="home">
 
         <div class="hero-content">
-            <div class="html-tag top-tag">&lt;body&gt;</div>
-
-            <div class="main-text">
-                <div class="html-tag">&lt;h1&gt;</div>
-                <h1>Hi,<br>I'm <span class="accent-g">G</span>omgom</h1>
-                <div class="html-tag">&lt;/h1&gt;</div>
-
-                <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-bio">With over 6 years of experience across IT Infrastructure, Databases, and DevOps, I specialize in architecting automated, resilient, and well-monitored environments. I value continuous learning and strong team collaboration to deliver reliable enterprise solutions.</p>
-                <p class="intro-cta">Let's connect and collaborate!</p>
-                <div class="html-tag">&lt;/p&gt;</div>
+            <div class="hero-intro">
+                <span class="hero-greeting">Hi, I'm</span>
+                <h1 class="hero-name">Gomgom Silalahi</h1>
             </div>
+
+            <p class="intro-bio">With over 6 years of experience across IT Infrastructure, Databases, and DevOps, I specialize in architecting automated, resilient, and well-monitored environments. I value continuous learning and strong team collaboration to deliver reliable enterprise solutions.</p>
 
             <div class="hero-actions">
                 <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact Me</a>
