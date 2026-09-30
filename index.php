@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.7">
+    <link rel="stylesheet" href="assets/style.css?v=3.8">
 </head>
 
 <body>
@@ -334,7 +334,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h5>Project Management</h5>
+                        <h4>Project Management</h4>
                         <div class="tags">
                             <span class="tag">Jira</span>
                             <span class="tag">Confluence</span>

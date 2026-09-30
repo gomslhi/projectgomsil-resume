@@ -528,7 +528,9 @@ html.lenis body {
 }
 
 .tech-stack-group h4,
-.skill-group h4 {
+.tech-stack-group h5,
+.skill-group h4,
+.skill-group h5 {
     font-size: 0.76rem;
     font-weight: 600;
     letter-spacing: 1.5px;
