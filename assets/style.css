@@ -11,6 +11,7 @@
     --nav-border: rgba(15, 23, 42, 0.06);
     --tag-bg: #F1F5F9;
     --tag-text: #334155;
+    --tag-border: #E2E8F0;
     --btn-hover-bg: rgba(2, 132, 199, 0.06);
     --btn-hover-shadow: rgba(2, 132, 199, 0.15);
     transition: background-color 0.3s, color 0.3s;
@@ -27,8 +28,9 @@
     --border-color: #1E293B;
     --nav-bg: rgba(11, 15, 25, 0.88);
     --nav-border: rgba(255, 255, 255, 0.07);
-    --tag-bg: #1E293B;
+    --tag-bg: #151A24;
     --tag-text: #CBD5E1;
+    --tag-border: #232B3B;
     --btn-hover-bg: rgba(56, 189, 248, 0.08);
     --btn-hover-shadow: rgba(56, 189, 248, 0.2);
 }
@@ -415,60 +417,57 @@ html.lenis body {
     border-bottom: 1px solid var(--border-color);
 }
 
-/* Tech Stack (Stacked Vertical Flow - Simple & Elegant) */
+/* Tech Stack (Minimalist Pill-Capsule Vertical Flow - Inspired by Reference) */
 .tech-stack-list,
 .skills-grid {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.25rem;
 }
 
 .tech-stack-group,
 .skill-group {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.tech-stack-group:last-child,
-.skill-group:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+    gap: 0.75rem;
 }
 
 .tech-stack-group h4,
 .skill-group h4 {
-    font-size: 0.95rem;
+    font-size: 0.76rem;
     font-weight: 600;
-    letter-spacing: -0.1px;
-    color: var(--text-primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
     margin: 0;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.55rem 0.65rem;
 }
 
 .tag {
     background-color: var(--tag-bg);
     color: var(--tag-text);
-    padding: 0.4rem 0.85rem;
-    border-radius: 6px;
-    font-size: 0.82rem;
+    padding: 0.45rem 1.15rem;
+    border-radius: 9999px; /* Pill Capsule */
+    font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 0.1px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--tag-border);
     transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.4;
 }
 
 .tag:hover {
     border-color: var(--accent-cyan);
-    color: var(--accent-cyan);
+    color: var(--text-primary);
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .timeline {

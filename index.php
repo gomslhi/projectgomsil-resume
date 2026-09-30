@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.2">
+    <link rel="stylesheet" href="assets/style.css?v=3.3">
 </head>
 
 <body>
@@ -292,13 +292,15 @@
                         <div class="tags">
                             <span class="tag">Windows Server</span>
                             <span class="tag">RHEL / CentOS</span>
+                            <span class="tag">IBM WebSphere</span>
+                            <span class="tag">IIS</span>
                         </div>
                     </div>
                     <div class="tech-stack-group">
                         <h4>Databases</h4>
                         <div class="tags">
                             <span class="tag">PostgreSQL</span>
-                            <span class="tag">MSSQL</span>
+                            <span class="tag">MS SQL Server</span>
                             <span class="tag">MySQL</span>
                             <span class="tag">MongoDB</span>
                         </div>
@@ -308,7 +310,7 @@
                         <div class="tags">
                             <span class="tag">MikroTik</span>
                             <span class="tag">Cisco</span>
-                            <span class="tag">Wazuh</span>
+                            <span class="tag">IPsec VPN</span>
                             <span class="tag">Kaspersky</span>
                         </div>
                     </div>
