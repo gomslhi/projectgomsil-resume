@@ -41,17 +41,17 @@
             </div>
 
             <!-- Lead Statement (Minimalist & Punchy) -->
-            <p class="hero-headline">6+ years engineering enterprise IT infrastructure, automated DevOps pipelines, and database systems. Based in Jakarta, Indonesia.</p>
+            <p class="hero-headline">6+ years engineering enterprise IT Infrastructure and DevOps. Based in Jakarta, Indonesia.</p>
 
             <!-- Expandable Overview (Inspired by Reference) -->
             <div class="hero-expandable">
                 <button class="details-toggle" id="toggle-work" aria-expanded="false" aria-controls="work-collapse">
                     <span class="toggle-sign">+</span>
-                    <span class="toggle-label">Background & Experience</span>
+                    <span class="toggle-label">More ..</span>
                 </button>
                 <div class="details-collapse" id="work-collapse">
                     <div class="details-inner">
-                        <p class="details-text">With over 6 years in enterprise IT—most notably within a multinational general insurance enterprise—I focus on architecting resilient, automated, and highly available infrastructure. In the financial and insurance sector, where strict regulatory compliance, high availability (99.9%), and zero data loss are mission-critical, I manage hybrid cloud environments, automated deployment pipelines, and enterprise database systems. My work combines solid system administration with modern DevOps practices to keep core enterprise operations running seamlessly.</p>
+                        <p class="details-text">With over 6 years in enterprise IT—most notably within a Insurance enterprise—I focus on architecting resilient, automated, and highly available infrastructure. In the Insurance sector, where strict regulatory compliance, high availability (99.9%), and zero data loss are mission-critical, I manage hybrid cloud environments, automated deployment pipelines, and enterprise database systems. My work combines solid system administration with modern DevOps practices to keep core enterprise operations running seamlessly.</p>
                     </div>
                 </div>
             </div>
