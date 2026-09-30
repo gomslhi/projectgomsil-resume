@@ -285,12 +285,52 @@ html.lenis body {
     color: var(--accent-cyan);
 }
 
-/* Hero Actions & Inverted Pill Button */
+/* Hero Actions & Buttons */
 .hero-actions {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.pill-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.65rem 1.45rem;
+    border-radius: 9999px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: var(--accent-cyan);
+    color: #FFFFFF;
+    border: 1px solid var(--accent-cyan);
+}
+
+[data-theme="dark"] .pill-btn-primary {
+    background-color: #38BDF8;
+    color: #0B0F19;
+    border: 1px solid #38BDF8;
+}
+
+[data-theme="dark"] .pill-btn-primary:hover {
+    background-color: #7DD3FC;
+    border-color: #7DD3FC;
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.28);
+    transform: translateY(-1px);
+}
+
+.pill-btn-primary:hover {
+    background-color: #0369A1;
+    border-color: #0369A1;
+    box-shadow: 0 4px 16px rgba(2, 132, 199, 0.25);
+    transform: translateY(-1px);
 }
 
 .pill-btn-download {
@@ -310,26 +350,30 @@ html.lenis body {
 
 /* Inverted Pill button: light pill on dark theme, dark pill on light theme */
 [data-theme="dark"] .pill-btn-download {
-    background-color: #F1F5F9;
-    color: #0F172A;
-    border: 1px solid #F1F5F9;
+    background-color: #151A24;
+    color: #F8FAFC;
+    border: 1px solid #232B3B;
 }
 
 [data-theme="dark"] .pill-btn-download:hover {
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.18);
+    background-color: #1E2536;
+    border-color: #38BDF8;
+    color: #38BDF8;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     transform: translateY(-1px);
 }
 
 .pill-btn-download {
-    background-color: #0F172A;
-    color: #FFFFFF;
-    border: 1px solid #0F172A;
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
 }
 
 .pill-btn-download:hover {
-    background-color: #1E293B;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.18);
+    background-color: #F8FAFC;
+    border-color: #0284C7;
+    color: #0284C7;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     transform: translateY(-1px);
 }
 
@@ -749,8 +793,12 @@ html.lenis body {
     .hero-actions {
         width: 100%;
         margin-top: 0.25rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
     }
 
+    .pill-btn-primary,
     .pill-btn-download {
         width: 100%;
         justify-content: center;

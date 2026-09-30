@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.6">
+    <link rel="stylesheet" href="assets/style.css?v=3.7">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <div class="hero-expandable">
                 <button class="details-toggle" id="toggle-work" aria-expanded="false" aria-controls="work-collapse">
                     <span class="toggle-sign">+</span>
-                    <span class="toggle-label">More about my work</span>
+                    <span class="toggle-label">Background & Experience</span>
                 </button>
                 <div class="details-collapse" id="work-collapse">
                     <div class="details-inner">
@@ -58,13 +58,13 @@
 
             <!-- Minimalist Uppercase Action Text Links -->
             <div class="hero-text-links">
-                <a href="mailto:gomgom.silalahi@projectgomsil.com" class="text-link">EMAIL</a>
                 <a href="https://linkedin.com/in/gomgomsilalahi" target="_blank" rel="noopener noreferrer" class="text-link">LINKEDIN</a>
                 <a href="https://github.com/gomslhi" target="_blank" rel="noopener noreferrer" class="text-link">GITHUB</a>
             </div>
 
-            <!-- Inverted Pill Download CV Button -->
+            <!-- Action Buttons (Contact Me & Download CV) -->
             <div class="hero-actions">
+                <a href="mailto:gomgom.silalahi@projectgomsil.com" class="pill-btn-primary">Contact Me</a>
                 <a href="assets/Gomgom_Silalahi_Resume.pdf" class="pill-btn-download" download>
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
