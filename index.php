@@ -51,7 +51,7 @@
                 </button>
                 <div class="details-collapse" id="work-collapse">
                     <div class="details-inner">
-                        <p class="details-text">With over 6 years in enterprise IT—most notably within a Insurance enterprise—I focus on architecting resilient, automated, and highly available infrastructure. In the Insurance sector, where strict regulatory compliance, high availability (99.9%), and zero data loss are mission-critical, I manage hybrid cloud environments, automated deployment pipelines, and enterprise database systems. My work combines solid system administration with modern DevOps practices to keep core enterprise operations running seamlessly.</p>
+                        <p class="details-text">With over 6 years in enterprise IT—most notably within a Insurance enterprise—I focus on architecting resilient, automated, and highly available infrastructure. In the Insurance sector, where strict regulatory compliance, high availability, and zero data loss are mission-critical, I manage hybrid cloud environments, automated deployment pipelines, and enterprise database systems. My work combines solid system administration with modern DevOps practices to keep core enterprise operations running seamlessly.</p>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,6 @@
                             <span class="tag">Prometheus</span>
                             <span class="tag">Grafana</span>
                             <span class="tag">ELK Stack</span>
-                            <span class="tag">Wazuh</span>
                         </div>
                     </div>
                     <div class="tech-stack-group">
@@ -330,7 +329,7 @@
                         <div class="tags">
                             <span class="tag">MikroTik</span>
                             <span class="tag">Cisco</span>
-                            <span class="tag">IPsec VPN</span>
+                            <span class="tag">Wazuh</span>
                             <span class="tag">Kaspersky</span>
                         </div>
                     </div>
