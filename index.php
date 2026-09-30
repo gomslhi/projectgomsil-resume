@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.3">
+    <link rel="stylesheet" href="assets/style.css?v=3.4">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                 <h1 class="hero-name">Gomgom Silalahi</h1>
             </div>
 
-            <p class="intro-bio">With over 6 years of experience across IT Infrastructure, Databases, and DevOps, I specialize in architecting automated, resilient, and well-monitored environments. I value continuous learning and strong team collaboration to deliver reliable enterprise solutions.</p>
+            <p class="intro-bio">With over 6 years of experience across IT Infrastructure, Databases, and DevOps, I specialize in architecting automated, resilient, and well-monitored environments.</p>
 
             <div class="hero-actions">
                 <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact Me</a>
