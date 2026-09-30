@@ -415,18 +415,36 @@ html.lenis body {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Tech Stack (Stacked Vertical Flow - Simple & Elegant) */
+.tech-stack-list,
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
+.tech-stack-group,
+.skill-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tech-stack-group:last-child,
+.skill-group:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.tech-stack-group h4,
 .skill-group h4 {
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: -0.1px;
     color: var(--text-primary);
-    margin: 0 0 0.85rem 0;
+    margin: 0;
 }
 
 .tags {
@@ -444,7 +462,13 @@ html.lenis body {
     font-weight: 500;
     letter-spacing: 0.1px;
     border: 1px solid var(--border-color);
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.25s ease;
+}
+
+.tag:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    transform: translateY(-1px);
 }
 
 .timeline {

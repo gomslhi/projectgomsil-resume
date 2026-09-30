@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.1">
+    <link rel="stylesheet" href="assets/style.css?v=3.2">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
                 <a href="#education">Education</a>
-                <a href="#skills">Skills & Tools</a>
+                <a href="#skills">Tech Stack</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
@@ -241,11 +241,11 @@
                 </div>
             </div>
 
-            <!-- SKILLS SECTION -->
+            <!-- TECH STACK SECTION -->
             <div class="content-section" id="skills">
-                <h2 class="section-title">Skills & Tools</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="tech-stack-list">
+                    <div class="tech-stack-group">
                         <h4>Monitoring & Observability</h4>
                         <div class="tags">
                             <span class="tag">Prometheus</span>
@@ -254,14 +254,14 @@
                             <span class="tag">Wazuh</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Containers</h4>
+                    <div class="tech-stack-group">
+                        <h4>Containers & Orchestration</h4>
                         <div class="tags">
                             <span class="tag">Docker</span>
                             <span class="tag">Kubernetes</span>
                         </div>
                     </div>
-                    <div class="skill-group">
+                    <div class="tech-stack-group">
                         <h4>Cloud & Virtualization</h4>
                         <div class="tags">
                             <span class="tag">VMware ESXi</span>
@@ -269,17 +269,17 @@
                             <span class="tag">AWS</span>
                         </div>
                     </div>
-                    <div class="skill-group">
+                    <div class="tech-stack-group">
                         <h4>CI/CD & Automation</h4>
                         <div class="tags">
-                            <span class="tag">GIT</span>
+                            <span class="tag">Git</span>
                             <span class="tag">Jenkins</span>
-                            <span class="tag">Sonarqube</span>
+                            <span class="tag">SonarQube</span>
                             <span class="tag">Infisical</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Scripting</h4>
+                    <div class="tech-stack-group">
+                        <h4>Scripting & Automation</h4>
                         <div class="tags">
                             <span class="tag">Bash</span>
                             <span class="tag">PowerShell</span>
@@ -287,14 +287,14 @@
                             <span class="tag">SQL</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Server & OS</h4>
+                    <div class="tech-stack-group">
+                        <h4>Operating Systems & Servers</h4>
                         <div class="tags">
                             <span class="tag">Windows Server</span>
-                            <span class="tag">RHEL/CentOS</span>
+                            <span class="tag">RHEL / CentOS</span>
                         </div>
                     </div>
-                    <div class="skill-group">
+                    <div class="tech-stack-group">
                         <h4>Databases</h4>
                         <div class="tags">
                             <span class="tag">PostgreSQL</span>
@@ -303,10 +303,10 @@
                             <span class="tag">MongoDB</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Networking & Sec</h4>
+                    <div class="tech-stack-group">
+                        <h4>Networking & Security</h4>
                         <div class="tags">
-                            <span class="tag">Mikrotik</span>
+                            <span class="tag">MikroTik</span>
                             <span class="tag">Cisco</span>
                             <span class="tag">Wazuh</span>
                             <span class="tag">Kaspersky</span>
