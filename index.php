@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.5">
+    <link rel="stylesheet" href="assets/style.css?v=3.6">
 </head>
 
 <body>
@@ -43,10 +43,17 @@
             <!-- Lead Statement (Minimalist & Punchy) -->
             <p class="hero-headline">6+ years engineering enterprise IT infrastructure, automated DevOps pipelines, and database systems. Based in Jakarta, Indonesia.</p>
 
-            <!-- Detailed Overview with Editorial Dash -->
-            <div class="hero-details">
-                <span class="details-label">– About my work</span>
-                <p class="details-text">Infrastructure & DevOps Engineer specialized in hybrid cloud environments (AWS & on-premises), enterprise virtualization (VMware ESXi/vSphere), Kubernetes orchestration, and automated CI/CD (Jenkins, Git, SonarQube). Strong background in database administration (PostgreSQL, MS SQL), proactive observability (Prometheus, Grafana, ELK, Wazuh), and corporate network security.</p>
+            <!-- Expandable Overview (Inspired by Reference) -->
+            <div class="hero-expandable">
+                <button class="details-toggle" id="toggle-work" aria-expanded="false" aria-controls="work-collapse">
+                    <span class="toggle-sign">+</span>
+                    <span class="toggle-label">More about my work</span>
+                </button>
+                <div class="details-collapse" id="work-collapse">
+                    <div class="details-inner">
+                        <p class="details-text">With over 6 years in enterprise IT—most notably within a multinational general insurance enterprise—I focus on architecting resilient, automated, and highly available infrastructure. In the financial and insurance sector, where strict regulatory compliance, high availability (99.9%), and zero data loss are mission-critical, I manage hybrid cloud environments, automated deployment pipelines, and enterprise database systems. My work combines solid system administration with modern DevOps practices to keep core enterprise operations running seamlessly.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Minimalist Uppercase Action Text Links -->
@@ -411,6 +418,20 @@
                 themeToggleBtn.innerHTML = '☀️ Light';
             }
         });
+
+        // Expandable Work Details Toggle (Smooth Animated Accordion)
+        const toggleWorkBtn = document.getElementById('toggle-work');
+        const workCollapse = document.getElementById('work-collapse');
+        if (toggleWorkBtn && workCollapse) {
+            toggleWorkBtn.addEventListener('click', () => {
+                const isOpen = workCollapse.classList.toggle('is-open');
+                toggleWorkBtn.setAttribute('aria-expanded', isOpen);
+                const signEl = toggleWorkBtn.querySelector('.toggle-sign');
+                if (signEl) {
+                    signEl.textContent = isOpen ? '–' : '+';
+                }
+            });
+        }
     </script>
 </body>
 
