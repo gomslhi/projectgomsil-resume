@@ -192,94 +192,107 @@ html.lenis body {
     color: var(--text-primary);
 }
 
-.intro-bio {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    line-height: 1.75;
-    margin: 0 0 2rem 0;
-    max-width: 620px;
-    width: 100%;
-    text-align: left;
+/* Minimalist Hero Bio (Inspired by Reference) */
+.hero-headline {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.65;
+    margin: 0 0 1.25rem 0;
+    max-width: 660px;
+    letter-spacing: -0.15px;
 }
 
+.hero-details {
+    margin: 0 0 1.5rem 0;
+    max-width: 660px;
+}
+
+.details-label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.1px;
+}
+
+.details-text {
+    font-size: 0.94rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Minimalist Uppercase Action Text Links */
+.hero-text-links {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-text-links .text-link {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+.hero-text-links .text-link:hover {
+    color: var(--accent-cyan);
+}
+
+/* Hero Actions & Inverted Pill Button */
 .hero-actions {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
-.contact-btn {
+.pill-btn-download {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid var(--accent-cyan);
-    color: var(--accent-cyan);
-    padding: 0.8rem 1.8rem;
-    text-decoration: none;
-    font-size: 0.9rem;
+    gap: 0.55rem;
+    padding: 0.65rem 1.4rem;
+    border-radius: 9999px;
+    font-size: 0.86rem;
     font-weight: 600;
-    letter-spacing: 0.3px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    background: transparent;
-}
-
-.contact-btn:hover {
-    background: var(--btn-hover-bg);
-    box-shadow: var(--btn-hover-shadow);
-    color: var(--accent-cyan);
-}
-
-.btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    padding: 0.8rem 1.8rem;
+    letter-spacing: 0.1px;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    background: transparent;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
-.btn-secondary:hover {
-    border-color: var(--text-primary);
-    background: var(--btn-hover-bg);
-    color: var(--text-primary);
+/* Inverted Pill button: light pill on dark theme, dark pill on light theme */
+[data-theme="dark"] .pill-btn-download {
+    background-color: #F1F5F9;
+    color: #0F172A;
+    border: 1px solid #F1F5F9;
 }
 
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
+[data-theme="dark"] .pill-btn-download:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
 }
 
-.social-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 1px solid var(--border-color);
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    background: transparent;
+.pill-btn-download {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    border: 1px solid #0F172A;
 }
 
-.social-btn:hover {
-    border-color: var(--accent-cyan);
-    color: var(--accent-cyan);
-    transform: translateY(-2px);
+.pill-btn-download:hover {
+    background-color: #1E293B;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.18);
+    transform: translateY(-1px);
 }
 
 /* Stunning Centered Mouse & Chevron Scroll Indicator */
@@ -690,25 +703,20 @@ html.lenis body {
         font-size: 0.95rem;
     }
 
+    .hero-text-links {
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+
     .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
         width: 100%;
-        gap: 0.75rem;
+        margin-top: 0.25rem;
     }
 
-    .contact-btn,
-    .btn-secondary {
+    .pill-btn-download {
         width: 100%;
-        text-align: center;
         justify-content: center;
-        box-sizing: border-box;
-        padding: 0.85rem 1.5rem;
-    }
-
-    .social-links {
-        justify-content: center;
-        margin-top: 0.5rem;
+        padding: 0.75rem 1.5rem;
     }
 
     .hero-scroll-indicator {

@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.4">
+    <link rel="stylesheet" href="assets/style.css?v=3.5">
 </head>
 
 <body>
@@ -40,19 +40,32 @@
                 <h1 class="hero-name">Gomgom Silalahi</h1>
             </div>
 
-            <p class="intro-bio">With over 6 years of experience across IT Infrastructure, Databases, and DevOps, I specialize in architecting automated, resilient, and well-monitored environments.</p>
+            <!-- Lead Statement (Minimalist & Punchy) -->
+            <p class="hero-headline">6+ years engineering enterprise IT infrastructure, automated DevOps pipelines, and database systems. Based in Jakarta, Indonesia.</p>
 
+            <!-- Detailed Overview with Editorial Dash -->
+            <div class="hero-details">
+                <span class="details-label">– About my work</span>
+                <p class="details-text">Infrastructure & DevOps Engineer specialized in hybrid cloud environments (AWS & on-premises), enterprise virtualization (VMware ESXi/vSphere), Kubernetes orchestration, and automated CI/CD (Jenkins, Git, SonarQube). Strong background in database administration (PostgreSQL, MS SQL), proactive observability (Prometheus, Grafana, ELK, Wazuh), and corporate network security.</p>
+            </div>
+
+            <!-- Minimalist Uppercase Action Text Links -->
+            <div class="hero-text-links">
+                <a href="mailto:gomgom.silalahi@projectgomsil.com" class="text-link">EMAIL</a>
+                <a href="https://linkedin.com/in/gomgomsilalahi" target="_blank" rel="noopener noreferrer" class="text-link">LINKEDIN</a>
+                <a href="https://github.com/gomslhi" target="_blank" rel="noopener noreferrer" class="text-link">GITHUB</a>
+            </div>
+
+            <!-- Inverted Pill Download CV Button -->
             <div class="hero-actions">
-                <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact Me</a>
-                <a href="assets/Gomgom_Silalahi_Resume.pdf" class="btn-secondary" download>Download CV</a>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/gomgomsilalahi" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25a1.62 1.62 0 0 0-1.62 1.62c0 .89.73 1.62 1.62 1.62.9 0 1.62-.73 1.62-1.62 0-.89-.72-1.62-1.62-1.62Z"/></svg>
-                    </a>
-                    <a href="https://github.com/gomslhi" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
-                    </a>
-                </div>
+                <a href="assets/Gomgom_Silalahi_Resume.pdf" class="pill-btn-download" download>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download CV</span>
+                </a>
             </div>
         </div>
 
