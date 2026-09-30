@@ -1,44 +1,46 @@
 :root {
-    /* Light Theme (Default) */
+    /* Light Theme (Clean, Soft, Professional) */
     --bg-main: #FFFFFF;
-    --text-primary: #111111;
-    --text-secondary: #666666;
-    --accent-cyan: #0055FF;
-    --accent-blue: #0055FF;
-    --accent-pink: #FF0055;
-    --border-color: #E5E5E5;
-    --nav-bg: rgba(255, 255, 255, 0.85);
-    --nav-border: rgba(0, 0, 0, 0.05);
-    --tag-bg: #F8F9FA;
-    --tag-text: #333333;
-    --btn-hover-bg: rgba(0, 85, 255, 0.05);
-    --btn-hover-shadow: rgba(0, 85, 255, 0.15);
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --accent-cyan: #0284C7;
+    --accent-blue: #0284C7;
+    --accent-pink: #E11D48;
+    --border-color: #E2E8F0;
+    --nav-bg: rgba(255, 255, 255, 0.88);
+    --nav-border: rgba(15, 23, 42, 0.06);
+    --tag-bg: #F1F5F9;
+    --tag-text: #334155;
+    --btn-hover-bg: rgba(2, 132, 199, 0.06);
+    --btn-hover-shadow: rgba(2, 132, 199, 0.15);
     transition: background-color 0.3s, color 0.3s;
 }
 
 [data-theme="dark"] {
-    --bg-main: #000000;
-    --text-primary: #FFFFFF;
-    --text-secondary: #888888;
-    --accent-cyan: #08FDD8;
-    --accent-blue: #08FDD8;
-    /* Using cyan alias to keep style consistent */
-    --accent-pink: #FD2155;
-    --border-color: #33363D;
-    --nav-bg: rgba(0, 0, 0, 0.85);
-    --nav-border: rgba(255, 255, 255, 0.05);
-    --tag-bg: #242730;
-    --tag-text: #D1D5DB;
-    --btn-hover-bg: rgba(8, 253, 216, 0.1);
-    --btn-hover-shadow: rgba(8, 253, 216, 0.3);
+    /* Dark Theme (Subtle Deep Navy/Slate, Softer Accents) */
+    --bg-main: #0B0F19;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --accent-cyan: #38BDF8;
+    --accent-blue: #38BDF8;
+    --accent-pink: #FB7185;
+    --border-color: #1E293B;
+    --nav-bg: rgba(11, 15, 25, 0.88);
+    --nav-border: rgba(255, 255, 255, 0.07);
+    --tag-bg: #1E293B;
+    --tag-text: #CBD5E1;
+    --btn-hover-bg: rgba(56, 189, 248, 0.08);
+    --btn-hover-shadow: rgba(56, 189, 248, 0.2);
 }
 
 body {
     margin: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: var(--bg-main);
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 html {
@@ -91,8 +93,9 @@ html.lenis body {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    font-weight: 800;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: -0.3px;
     color: var(--text-primary);
 }
 
@@ -103,8 +106,7 @@ html.lenis body {
     /* Perfect circle */
     object-fit: cover;
     /* Prevents stretching */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .logo span {
@@ -115,7 +117,8 @@ html.lenis body {
     color: var(--text-secondary);
     text-decoration: none;
     margin-left: 2rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
@@ -127,10 +130,11 @@ html.lenis body {
     background: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    padding: 0.4rem 0.8rem;
+    padding: 0.35rem 0.85rem;
     border-radius: 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 500;
     cursor: pointer;
     margin-left: 2rem;
     transition: all 0.3s;
@@ -169,30 +173,31 @@ html.lenis body {
 }
 
 .hero-greeting {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 500;
     color: var(--accent-cyan);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     display: block;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
 }
 
 .hero-name {
-    font-size: 4.2rem;
-    font-weight: 800;
-    line-height: 1.08;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.15;
     margin: 0;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.8px;
     color: var(--text-primary);
 }
 
 .intro-bio {
     color: var(--text-secondary);
-    font-size: 1.05rem;
-    letter-spacing: 0.2px;
-    line-height: 1.7;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.75;
     margin: 0 0 2rem 0;
-    max-width: 640px;
+    max-width: 620px;
     width: 100%;
     text-align: left;
 }
@@ -211,12 +216,12 @@ html.lenis body {
     justify-content: center;
     border: 1px solid var(--accent-cyan);
     color: var(--accent-cyan);
-    padding: 0.85rem 2.2rem;
+    padding: 0.8rem 1.8rem;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 4px;
+    letter-spacing: 0.3px;
+    border-radius: 6px;
     transition: all 0.3s ease;
     background: transparent;
 }
@@ -233,12 +238,12 @@ html.lenis body {
     justify-content: center;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    padding: 0.85rem 2rem;
+    padding: 0.8rem 1.8rem;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    letter-spacing: 0.5px;
-    border-radius: 4px;
+    letter-spacing: 0.3px;
+    border-radius: 6px;
     transition: all 0.3s ease;
     background: transparent;
 }
@@ -334,11 +339,11 @@ html.lenis body {
 }
 
 .hero-scroll-indicator .scroll-label {
-    font-size: 0.72rem;
-    letter-spacing: 2.5px;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     font-weight: 500;
-    opacity: 0.75;
+    opacity: 0.7;
     margin-top: 0.15rem;
 }
 
@@ -379,15 +384,15 @@ html.lenis body {
     background: none;
     border: none;
     color: var(--text-secondary);
-    font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-family: inherit;
+    font-size: 0.95rem;
     font-weight: 500;
-    padding: 1rem 2rem;
+    letter-spacing: 0.1px;
+    padding: 0.85rem 1.75rem;
     cursor: pointer;
     position: relative;
     transition: color 0.3s;
     text-decoration: none;
-    /* Add this because they are now anchor tags */
     display: inline-block;
 }
 
@@ -401,12 +406,13 @@ html.lenis body {
 }
 
 .section-title {
-    font-size: 2.2rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: -0.4px;
     color: var(--text-primary);
-    margin-bottom: 3rem;
-    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.85rem;
     border-bottom: 1px solid var(--border-color);
-    letter-spacing: 1px;
 }
 
 .skills-grid {
@@ -416,9 +422,11 @@ html.lenis body {
 }
 
 .skill-group h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.1px;
     color: var(--text-primary);
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.85rem 0;
 }
 
 .tags {
@@ -430,9 +438,11 @@ html.lenis body {
 .tag {
     background-color: var(--tag-bg);
     color: var(--tag-text);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
     border: 1px solid var(--border-color);
     transition: background-color 0.3s, color 0.3s;
 }
@@ -481,16 +491,18 @@ html.lenis body {
 }
 
 .company-details h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.4rem;
+    margin: 0 0 0.35rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
     color: var(--text-primary);
 }
 
 .company-details p {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
     text-align: left;
 }
 
@@ -510,8 +522,8 @@ html.lenis body {
     position: absolute;
     left: 0;
     top: 0.6rem;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: var(--accent-blue);
 }
@@ -525,14 +537,17 @@ html.lenis body {
 
 .job-meta h4 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
     color: var(--text-primary);
 }
 
 .job-date {
     color: var(--accent-blue);
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 .job-company {
@@ -545,6 +560,8 @@ html.lenis body {
     padding-left: 1.2rem;
     margin: 0;
     text-align: left;
+    font-size: 0.92rem;
+    line-height: 1.7;
 }
 
 .job-item li {
@@ -594,7 +611,7 @@ html.lenis body {
     }
 
     .logo {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         gap: 0.5rem;
     }
 
@@ -641,12 +658,13 @@ html.lenis body {
     }
 
     .hero-name {
-        font-size: 2.8rem !important;
-        line-height: 1.12 !important;
+        font-size: 2.3rem !important;
+        line-height: 1.18 !important;
+        letter-spacing: -0.5px !important;
     }
 
     .hero-greeting {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .hero-actions {
@@ -699,7 +717,8 @@ html.lenis body {
 
 @media (max-width: 480px) {
     .hero-name {
-        font-size: 2.2rem !important;
+        font-size: 1.9rem !important;
+        letter-spacing: -0.4px !important;
     }
 
     .nav-links a {
@@ -707,6 +726,6 @@ html.lenis body {
     }
 
     .company-details h3 {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
     }
 }
