@@ -333,6 +333,13 @@
                             <span class="tag">Kaspersky</span>
                         </div>
                     </div>
+                    <div class="tech-stack-group">
+                        <h5>Project Management</h5>
+                        <div class="tags">
+                            <span class="tag">Jira</span>
+                            <span class="tag">Confluence</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
