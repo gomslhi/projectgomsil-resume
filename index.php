@@ -27,8 +27,8 @@
                 <a href="#experience">Professional Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#certifications">Certifications</a>
-                <a href="#skills">Tech Stack</a>
                 <a href="#education">Education</a>
+                <a href="#skills">Tech Stack</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
