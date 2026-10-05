@@ -396,7 +396,7 @@
             <!-- CERTIFICATIONS & BADGES SECTION                -->
             <!-- ============================================== -->
             <div class="content-section" id="certifications">
-                <h2 class="section-title">Certifications & Badges</h2>
+                <h2 class="section-title">Certifications & Training</h2>
                 <div class="certs-grid">
 
                     <!-- Cert 2 -->
@@ -478,7 +478,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Scripting & Automation</h4>
+                        <h4>Scripting </h4>
                         <div class="tags">
                             <span class="tag">Bash</span>
                             <span class="tag">PowerShell</span>
