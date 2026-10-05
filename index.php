@@ -415,6 +415,8 @@
                             <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
                         </div>
                     </div>
+                </div>
+            </div>
 
             <!-- EDUCATION SECTION -->
             <div class="content-section" id="education">
