@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css?v=3.8">
+    <link rel="stylesheet" href="assets/style.css?v=3.9">
 </head>
 
 <body>
@@ -25,8 +25,10 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
-                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#skills">Tech Stack</a>
+                <a href="#education">Education</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
@@ -233,6 +235,234 @@
                                         using advanced VLAN over VPN configurations (L2TP BCP on MikroTik).</li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ============================================== -->
+            <!-- FEATURED PROJECTS / CASE STUDIES SECTION       -->
+            <!-- ============================================== -->
+            <div class="content-section" id="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">Cloud & Virtualization</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Enterprise Hybrid Cloud & Automated Server Provisioning</h3>
+                            <p class="project-summary">Bridging on-premises VMware vSphere clusters with AWS cloud infrastructure to establish automated, resilient multi-environment deployment pipelines.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Manual server setups taking days with high risk of configuration drift.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Automated provisioning workflows using Git, Bash scripting, and standardized templates.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">⚡ 40% Faster Setup</span>
+                                <span class="metric-pill">🛡️ 99.9% Availability</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">VMware ESXi</span>
+                            <span class="tag">vSphere</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">RHEL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">DevOps & Security</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Automated CI/CD & Centralized Enterprise Secrets Management</h3>
+                            <p class="project-summary">Standardizing secure build-test-deploy cycles with integrated static code quality checks and centralized encryption for enterprise access control.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Scattered credentials, slow release cadences, and manual code review bottlenecks.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Engineered Jenkins CI/CD with SonarQube quality gates and Infisical secret vault.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">🚀 30% Higher Deployment Frequency</span>
+                                <span class="metric-pill">🔒 100% Encrypted Secrets</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">SonarQube</span>
+                            <span class="tag">Infisical</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">Monitoring & SIEM</span>
+                                <span class="project-year">2023 - 2024</span>
+                            </div>
+                            <h3 class="project-title">End-to-End Enterprise Observability & Threat Detection Stack</h3>
+                            <p class="project-summary">Unified monitoring, centralized log telemetry, and proactive host-based intrusion detection safeguarding hybrid insurance infrastructures.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Reactive incident response and decentralized server log inspection across fleets.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Integrated Prometheus & Grafana metrics with ELK log parsing and Wazuh SIEM alerting.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">⏱️ 35% Faster MTTD</span>
+                                <span class="metric-pill">📊 Real-Time Telemetry</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ELK Stack</span>
+                            <span class="tag">Wazuh</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">Enterprise Networking</span>
+                                <span class="project-year">2021 - 2022</span>
+                            </div>
+                            <h3 class="project-title">Multi-Branch Encrypted IPsec VPN & Zero-Downtime Routing</h3>
+                            <p class="project-summary">Architecting high-security encrypted site-to-site connectivity interconnecting 11 nationwide branch offices directly with corporate Headquarters.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Securing inter-branch financial data transfer over public lines with zero disruption.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Deployed EoIP Tunnels over IPsec, L2TP BCP, and OSPF dynamic routing on MikroTik & Cisco.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">🏢 11 Branch Offices</span>
+                                <span class="metric-pill">🔐 IPsec Encryption</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">MikroTik</span>
+                            <span class="tag">Cisco</span>
+                            <span class="tag">IPsec VPN</span>
+                            <span class="tag">OSPF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- CERTIFICATIONS & BADGES SECTION                -->
+            <!-- ============================================== -->
+            <div class="content-section" id="certifications">
+                <h2 class="section-title">Certifications & Badges</h2>
+                <div class="certs-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">☁️</span>
+                                    <span>Amazon Web Services</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">AWS Certified Solutions Architect – Associate</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Issued Nov 2023</span>
+                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">🐧</span>
+                                    <span>Red Hat</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">Red Hat Certified System Administrator (RHCSA)</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Issued Mar 2023</span>
+                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">☸️</span>
+                                    <span>CNCF / Linux Foundation</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">Certified Kubernetes Administrator (CKA)</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Issued Aug 2023</span>
+                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">🌐</span>
+                                    <span>Cisco</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">Cisco Certified Network Associate (CCNA)</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Issued Jan 2022</span>
+                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
                         </div>
                     </div>
                 </div>
