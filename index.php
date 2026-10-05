@@ -398,22 +398,6 @@
             <div class="content-section" id="certifications">
                 <h2 class="section-title">Certifications & Badges</h2>
                 <div class="certs-grid">
-                    <!-- Cert 1 -->
-                    <div class="cert-card">
-                        <div>
-                            <div class="cert-top">
-                                <div class="cert-issuer-badge">
-                                    <span class="cert-issuer-icon">☁️</span>
-                                    <span>Amazon Web Services</span>
-                                </div>
-                            </div>
-                            <h3 class="cert-name">AWS Certified Solutions Architect – Associate</h3>
-                        </div>
-                        <div class="cert-footer">
-                            <span class="cert-date">Issued Nov 2023</span>
-                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
-                        </div>
-                    </div>
 
                     <!-- Cert 2 -->
                     <div class="cert-card">
@@ -431,42 +415,6 @@
                             <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
                         </div>
                     </div>
-
-                    <!-- Cert 3 -->
-                    <div class="cert-card">
-                        <div>
-                            <div class="cert-top">
-                                <div class="cert-issuer-badge">
-                                    <span class="cert-issuer-icon">☸️</span>
-                                    <span>CNCF / Linux Foundation</span>
-                                </div>
-                            </div>
-                            <h3 class="cert-name">Certified Kubernetes Administrator (CKA)</h3>
-                        </div>
-                        <div class="cert-footer">
-                            <span class="cert-date">Issued Aug 2023</span>
-                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
-                        </div>
-                    </div>
-
-                    <!-- Cert 4 -->
-                    <div class="cert-card">
-                        <div>
-                            <div class="cert-top">
-                                <div class="cert-issuer-badge">
-                                    <span class="cert-issuer-icon">🌐</span>
-                                    <span>Cisco</span>
-                                </div>
-                            </div>
-                            <h3 class="cert-name">Cisco Certified Network Associate (CCNA)</h3>
-                        </div>
-                        <div class="cert-footer">
-                            <span class="cert-date">Issued Jan 2022</span>
-                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- EDUCATION SECTION -->
             <div class="content-section" id="education">
