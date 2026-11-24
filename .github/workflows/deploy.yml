@@ -1,0 +1,41 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: [main]
+  workflows_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: ./public_html/
+          dry-run: true        # hapus baris ini setelah uji pertama berhasil
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md
+            config/**
+
+      - name: Smoke test
+        run: |
+          curl --fail --silent --show-error --location https://resume.projectgomsil.com/ -o /dev/null
+          curl --fail --silent --show-error --location --head https://projectgomsil.com/assets/Gomgom_Silalahi_Resume.pdf
