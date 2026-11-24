@@ -398,7 +398,22 @@
             <div class="content-section" id="certifications">
                 <h2 class="section-title">Certifications & Training</h2>
                 <div class="certs-grid">
-
+                    <!-- Cert 1: AWS re/Start -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">☁️</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">AWS re/Start Graduate (Cloud Practitioner Training)</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Completed November 2026</span>
+                            <a href="LINK_VERIFIKASI_KAMU" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                    </div>
+                </div>
                     <!-- Cert 2 -->
                     <div class="cert-card">
                         <div>

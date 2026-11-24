@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gomgom Silalahi - DevOps Engineer</title>
+    <title>Gomgom Silalahi - IT Infrastructure & DevOps</title>
     <!-- Favicon dengan huruf 'g' yang modern -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- Google Font: Plus Jakarta Sans for simple, elegant, modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css?v=3.9">
 </head>
 
 <body>
@@ -23,8 +25,10 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#experience">Professional Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#education">Education</a>
-                <a href="#Skills">Skills & Tools</a>
+                <a href="#skills">Tech Stack</a>
                 <button id="theme-toggle" class="theme-btn">🌙 Dark</button>
             </div>
         </div>
@@ -33,27 +37,56 @@
     <div class="hero" id="home">
 
         <div class="hero-content">
-            <div class="html-tag top-tag">&lt;body&gt;</div>
-
-            <div class="main-text">
-                <div class="html-tag">&lt;h1&gt;</div>
-                <h1>Hi,<br>I'm <span class="accent-g">G</span>omgom,<br>DevOps Engineer</h1>
-                <div class="html-tag">&lt;/h1&gt;</div>
-
-                <div class="html-tag">&lt;p&gt;</div>
-                <p class="intro-bio">I'm an IT professional with over 6 years of experience managing IT Infrastructure,
-                    Databases, and DevOps Methodologies. My focus is on turning complex setups into clean,
-                    well-monitored environments.<br> I'm not the expert but I always welcome a collaborative
-                    approach—sharing insights with other engineers and learning new tools along the way.</p>
-                <p class="intro-cta">Drop a message to say hi!</p>
-                <div class="html-tag">&lt;/p&gt;</div>
+            <div class="hero-intro">
+                <span class="hero-greeting">Hi, I'm</span>
+                <h1 class="hero-name">Gomgom Silalahi</h1>
             </div>
 
-            <a href="mailto:gomgom.silalahi@projectgomsil.com" class="contact-btn">Contact me!</a>
+            <!-- Lead Statement (Minimalist & Punchy) -->
+            <p class="hero-headline">6+ years engineering enterprise IT Infrastructure and DevOps. Based in Jakarta, Indonesia.</p>
+
+            <!-- Expandable Overview (Inspired by Reference) -->
+            <div class="hero-expandable">
+                <button class="details-toggle" id="toggle-work" aria-expanded="false" aria-controls="work-collapse">
+                    <span class="toggle-sign">+</span>
+                    <span class="toggle-label">More ..</span>
+                </button>
+                <div class="details-collapse" id="work-collapse">
+                    <div class="details-inner">
+                        <p class="details-text">With over 6 years in enterprise IT—most notably within a Insurance enterprise—I focus on architecting resilient, automated, and highly available infrastructure. In the Insurance sector, where strict regulatory compliance, high availability, and zero data loss are mission-critical, I manage hybrid cloud environments, automated deployment pipelines, and enterprise database systems. My work combines solid system administration with modern DevOps practices to keep core enterprise operations running seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minimalist Uppercase Action Text Links -->
+            <div class="hero-text-links">
+                <a href="https://linkedin.com/in/gomgomsilalahi" target="_blank" rel="noopener noreferrer" class="text-link">LINKEDIN</a>
+                <a href="https://github.com/gomslhi" target="_blank" rel="noopener noreferrer" class="text-link">GITHUB</a>
+            </div>
+
+            <!-- Action Buttons (Contact Me & Download CV) -->
+            <div class="hero-actions">
+                <a href="mailto:gomgom.silalahi@projectgomsil.com" class="pill-btn-primary">Contact Me</a>
+                <a href="assets/Gomgom_Silalahi_Resume.pdf" class="pill-btn-download" download>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download CV</span>
+                </a>
+            </div>
         </div>
 
-        <div class="scroll-indicator left">scroll down &darr;</div>
-        <div class="scroll-indicator right">scroll down &darr;</div>
+        <a href="#experience" class="hero-scroll-indicator" aria-label="Scroll to Professional Experience" style="text-decoration: none;">
+            <span class="mouse-icon">
+                <span class="wheel-dot"></span>
+            </span>
+            <span class="scroll-label">Scroll to explore</span>
+            <svg class="scroll-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
     </div>
 
     <!-- Section Links -->
@@ -206,6 +239,199 @@
                     </div>
                 </div>
             </div>
+    
+            <!-- ============================================== -->
+            <!-- FEATURED PROJECTS / CASE STUDIES SECTION       -->
+            <!-- ============================================== -->
+            <div class="content-section" id="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">Cloud & Virtualization</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Enterprise Hybrid Cloud & Automated Server Provisioning</h3>
+                            <p class="project-summary">Bridging on-premises VMware vSphere clusters with AWS cloud infrastructure to establish automated, resilient multi-environment deployment pipelines.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Manual server setups taking days with high risk of configuration drift.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Automated provisioning workflows using Git, Bash scripting, and standardized templates.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">⚡ 40% Faster Setup</span>
+                                <span class="metric-pill">🛡️ 99.9% Availability</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">VMware ESXi</span>
+                            <span class="tag">vSphere</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Bash</span>
+                            <span class="tag">RHEL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">DevOps & Security</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Automated CI/CD & Centralized Enterprise Secrets Management</h3>
+                            <p class="project-summary">Standardizing secure build-test-deploy cycles with integrated static code quality checks and centralized encryption for enterprise access control.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Scattered credentials, slow release cadences, and manual code review bottlenecks.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Engineered Jenkins CI/CD with SonarQube quality gates and Infisical secret vault.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">🚀 30% Higher Deployment Frequency</span>
+                                <span class="metric-pill">🔒 100% Encrypted Secrets</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">SonarQube</span>
+                            <span class="tag">Infisical</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">Monitoring & SIEM</span>
+                                <span class="project-year">2023 - 2024</span>
+                            </div>
+                            <h3 class="project-title">End-to-End Enterprise Observability & Threat Detection Stack</h3>
+                            <p class="project-summary">Unified monitoring, centralized log telemetry, and proactive host-based intrusion detection safeguarding hybrid insurance infrastructures.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Reactive incident response and decentralized server log inspection across fleets.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Integrated Prometheus & Grafana metrics with ELK log parsing and Wazuh SIEM alerting.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">⏱️ 35% Faster MTTD</span>
+                                <span class="metric-pill">📊 Real-Time Telemetry</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ELK Stack</span>
+                            <span class="tag">Wazuh</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-meta">
+                                <span class="project-category">Enterprise Networking</span>
+                                <span class="project-year">2021 - 2022</span>
+                            </div>
+                            <h3 class="project-title">Multi-Branch Encrypted IPsec VPN & Zero-Downtime Routing</h3>
+                            <p class="project-summary">Architecting high-security encrypted site-to-site connectivity interconnecting 11 nationwide branch offices directly with corporate Headquarters.</p>
+                            
+                            <div class="problem-solution">
+                                <div class="ps-item">
+                                    <span class="ps-label">Challenge:</span> 
+                                    <span class="ps-desc">Securing inter-branch financial data transfer over public lines with zero disruption.</span>
+                                </div>
+                                <div class="ps-item">
+                                    <span class="ps-label">Solution:</span> 
+                                    <span class="ps-desc">Deployed EoIP Tunnels over IPsec, L2TP BCP, and OSPF dynamic routing on MikroTik & Cisco.</span>
+                                </div>
+                            </div>
+
+                            <div class="project-metrics">
+                                <span class="metric-pill">🏢 11 Branch Offices</span>
+                                <span class="metric-pill">🔐 IPsec Encryption</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">MikroTik</span>
+                            <span class="tag">Cisco</span>
+                            <span class="tag">IPsec VPN</span>
+                            <span class="tag">OSPF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================== -->
+            <!-- CERTIFICATIONS & BADGES SECTION                -->
+            <!-- ============================================== -->
+            <div class="content-section" id="certifications">
+                <h2 class="section-title">Certifications & Training</h2>
+                <div class="certs-grid">
+                    <!-- Cert 1: AWS re/Start -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">☁️</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">AWS re/Start Graduate (Cloud Practitioner Training)</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Completed November 2026</span>
+                            <a href="LINK_VERIFIKASI_KAMU" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                    </div>
+                </div>
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div>
+                            <div class="cert-top">
+                                <div class="cert-issuer-badge">
+                                    <span class="cert-issuer-icon">🐧</span>
+                                    <span>Red Hat</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-name">Red Hat Certified System Administrator (RHCSA)</h3>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-date">Issued Mar 2023</span>
+                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- EDUCATION SECTION -->
             <div class="content-section" id="education">
@@ -213,7 +439,7 @@
                 <div class="timeline">
                     <div class="company-header">
                         <div class="company-logo-container">
-                            <img src="assets/it_del.png" alt="Great Eastern General Insurance">
+                            <img src="assets/it_del.png" alt="Del Institute of Technology">
                         </div>
                         <div class="company-details">
                             <h3>Del Institute of Technology</h3>
@@ -221,7 +447,7 @@
                                 <h4>Bachelor Degree in Electrical Engineering</h4>
                                 <span class="job-date">Aug 2016 - Sep 2020</span>
                             </div>
-                            <p>GPA: 3.07/4.00</p>
+                            <p>GPA: 3.07/4.00</p> 
                             <p>Published a final project entitled "Vehicle Tracking System (VTS)
                                 real-time
                                 positioning based on GPS with Multihop LoRa Communication".</p>
@@ -230,18 +456,26 @@
                 </div>
             </div>
 
-            <!-- SKILLS SECTION -->
-            <div class="content-section" id="Skills">
-                <h2 class="section-title">Skills & Tools</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h4>Containers</h4>
+            <!-- TECH STACK SECTION -->
+            <div class="content-section" id="skills">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="tech-stack-list">
+                    <div class="tech-stack-group">
+                        <h4>Monitoring & Observability</h4>
+                        <div class="tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ELK Stack</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack-group">
+                        <h4>Containers & Orchestration</h4>
                         <div class="tags">
                             <span class="tag">Docker</span>
                             <span class="tag">Kubernetes</span>
                         </div>
                     </div>
-                    <div class="skill-group">
+                    <div class="tech-stack-group">
                         <h4>Cloud & Virtualization</h4>
                         <div class="tags">
                             <span class="tag">VMware ESXi</span>
@@ -249,17 +483,17 @@
                             <span class="tag">AWS</span>
                         </div>
                     </div>
-                    <div class="skill-group">
+                    <div class="tech-stack-group">
                         <h4>CI/CD & Automation</h4>
                         <div class="tags">
-                            <span class="tag">GIT</span>
+                            <span class="tag">Git</span>
                             <span class="tag">Jenkins</span>
-                            <span class="tag">Sonarqube</span>
+                            <span class="tag">SonarQube</span>
                             <span class="tag">Infisical</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Scripting</h4>
+                    <div class="tech-stack-group">
+                        <h4>Scripting </h4>
                         <div class="tags">
                             <span class="tag">Bash</span>
                             <span class="tag">PowerShell</span>
@@ -267,29 +501,38 @@
                             <span class="tag">SQL</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Server & OS</h4>
+                    <div class="tech-stack-group">
+                        <h4>Operating Systems & Servers</h4>
                         <div class="tags">
                             <span class="tag">Windows Server</span>
-                            <span class="tag">RHEL/CentOS</span>
+                            <span class="tag">RHEL / CentOS</span>
+                            <span class="tag">IBM WebSphere</span>
+                            <span class="tag">IIS</span>
                         </div>
                     </div>
-                    <div class="skill-group">
+                    <div class="tech-stack-group">
                         <h4>Databases</h4>
                         <div class="tags">
                             <span class="tag">PostgreSQL</span>
-                            <span class="tag">MSSQL</span>
+                            <span class="tag">MS SQL Server</span>
                             <span class="tag">MySQL</span>
                             <span class="tag">MongoDB</span>
                         </div>
                     </div>
-                    <div class="skill-group">
-                        <h4>Networking & Sec</h4>
+                    <div class="tech-stack-group">
+                        <h4>Networking & Security</h4>
                         <div class="tags">
-                            <span class="tag">Mikrotik</span>
+                            <span class="tag">MikroTik</span>
                             <span class="tag">Cisco</span>
                             <span class="tag">Wazuh</span>
                             <span class="tag">Kaspersky</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack-group">
+                        <h4>Project Management</h4>
+                        <div class="tags">
+                            <span class="tag">Jira</span>
+                            <span class="tag">Confluence</span>
                         </div>
                     </div>
                 </div>
@@ -298,65 +541,60 @@
     </div>
     </div>
     </div>
-    <!-- Premium Smooth Scroll Animation -->
+    <!-- Lenis Smooth Scroll Engine (Momentum & Inertia for Mouse Wheel & Trackpad) -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
     <script>
-        document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
+        // Initialize Lenis for buttery momentum scrolling (both scroll up & down)
+        let lenisInstance = null;
+        if (typeof Lenis !== 'undefined') {
+            lenisInstance = new Lenis({
+                duration: 1.3,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Apple-style smooth exponential deceleration
+                orientation: 'vertical',
+                gestureOrientation: 'vertical',
+                smoothWheel: true,
+                wheelMultiplier: 1,
+                touchMultiplier: 1.8,
+                infinite: false,
+            });
+
+            function raf(time) {
+                lenisInstance.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        }
+
+        // Unified smooth navigation for anchor links
+        document.querySelectorAll('.nav-links a[href^="#"], .hero-scroll-indicator').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
 
+                if (lenisInstance) {
+                    if (targetId === '#home') {
+                        lenisInstance.scrollTo(0, { duration: 1.3 });
+                    } else {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                            lenisInstance.scrollTo(targetElement, { offset: -navbarHeight - 20, duration: 1.3 });
+                        }
+                    }
+                    return;
+                }
+
+                // Fallback if Lenis is not available
                 if (targetId === '#home') {
-                    // For Home, smooth scroll exactly to the top
-                    const startPosition = window.pageYOffset;
-                    const distance = -startPosition;
-                    const duration = 1200;
-                    let start = null;
-                    function ease(t, b, c, d) {
-                        t /= d / 2;
-                        if (t < 1) return c / 2 * t * t * t * t + b;
-                        t -= 2;
-                        return -c / 2 * (t * t * t * t - 2) + b;
-                    }
-                    function animation(currentTime) {
-                        if (start === null) start = currentTime;
-                        const timeElapsed = currentTime - start;
-                        const run = ease(timeElapsed, startPosition, distance, duration);
-                        window.scrollTo(0, run);
-                        if (timeElapsed < duration) requestAnimationFrame(animation);
-                    }
-                    requestAnimationFrame(animation);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                     return;
                 }
 
                 const targetElement = document.querySelector(targetId);
                 if (!targetElement) return;
-
-                // For other sections, account for the sticky navbar height + extra padding
                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
-                const startPosition = window.pageYOffset;
-                const distance = targetPosition - startPosition;
-                const duration = 1200; // 1.2s duration for buttery smooth feel
-                let start = null;
-
-                function ease(t, b, c, d) {
-                    t /= d / 2;
-                    if (t < 1) return c / 2 * t * t * t * t + b;
-                    t -= 2;
-                    return -c / 2 * (t * t * t * t - 2) + b;
-                }
-
-                function animation(currentTime) {
-                    if (start === null) start = currentTime;
-                    const timeElapsed = currentTime - start;
-                    const run = ease(timeElapsed, startPosition, distance, duration);
-                    window.scrollTo(0, run);
-                    if (timeElapsed < duration) {
-                        requestAnimationFrame(animation);
-                    }
-                }
-
-                requestAnimationFrame(animation);
+                window.scrollTo({ top: targetPosition, behavior: 'smooth' });
             });
         });
 
@@ -381,6 +619,20 @@
                 themeToggleBtn.innerHTML = '☀️ Light';
             }
         });
+
+        // Expandable Work Details Toggle (Smooth Animated Accordion)
+        const toggleWorkBtn = document.getElementById('toggle-work');
+        const workCollapse = document.getElementById('work-collapse');
+        if (toggleWorkBtn && workCollapse) {
+            toggleWorkBtn.addEventListener('click', () => {
+                const isOpen = workCollapse.classList.toggle('is-open');
+                toggleWorkBtn.setAttribute('aria-expanded', isOpen);
+                const signEl = toggleWorkBtn.querySelector('.toggle-sign');
+                if (signEl) {
+                    signEl.textContent = isOpen ? '–' : '+';
+                }
+            });
+        }
     </script>
 </body>
 
