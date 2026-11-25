@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: Deploy to Hostinger with CI/CD Pipeline
 
 on:
   push:
@@ -13,12 +13,54 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
+  # ----- 1.pengecekan sebelum deploy -----
+  validate-html:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate HTML
+        run: npx --yes htmlhint@1 index.php
+  
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare site copy
+        run: |
+          mkdir _site
+          cp -r assets _site/assets
+          cp index.php _site/index.html
+      - name: Check Links
+        uses: lycheeverse/lychee-action@v2
+        with:
+            args: >-
+              --no-progress --max-retries 3 --timeout 20
+              --accept 200,204,429
+              --exclude 'linkedin\.com'
+              _site/index.html
+            fail: true
 
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Scan for leaked secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # ---------- Tahap 2: deploy, hanya jika semua cek lulus ----------
+        
+  deploy:
+    needs: [validate-html, link-check, secret-scan]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: Deploy via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -34,8 +76,40 @@ jobs:
             .github/**
             README.md
             config/**
+            lighthouserc.json
+            .gitleaksignore
 
-      - name: Smoke test
+  # ---------- Tahap 3: verifikasi setelah deploy ----------
+
+  smoke-test:
+    needs: deploy
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://resume.projectgomsil.com
+    steps:
+      - name: Homepage OK and has expected content
         run: |
-          curl --fail --silent --show-error --location https://resume.projectgomsil.com/ -o /dev/null
-          curl --fail --silent --show-error --location --head https://projectgomsil.com/assets/Gomgom_Silalahi_Resume.pdf
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 "$SITE_URL/" -o page.html
+          grep -q "Gomgom Silalahi" page.html
+      - name: CV is reachable and really a PDF
+        run: |
+          type=$(curl --fail --silent --show-error --location --retry 3 --head -o /dev/null -w '%{content_type}' "$SITE_URL/assets/Gomgom_Silalahi_Resume.pdf")
+          echo "content-type: $type"
+          case "$type" in application/pdf*) ;; *) echo "Not a PDF"; exit 1;; esac
+      - name: Core assets load
+        run: |
+          for f in assets/style.css assets/script.js assets/favicon.svg; do
+            curl --fail --silent --show-error --location --head -o /dev/null "$SITE_URL/$f"
+          done
+
+  lighthouse:
+    needs: smoke-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: https://resume.projectgomsil.com/
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true

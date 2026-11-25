@@ -539,8 +539,6 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
     <!-- Lenis Smooth Scroll Engine (Momentum & Inertia for Mouse Wheel & Trackpad) -->
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
     <script>
