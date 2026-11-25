@@ -27,7 +27,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           server-dir: ./public_html/
-          dry-run: true        # hapus baris ini setelah uji pertama berhasil
+          #dry-run: true        # hapus baris ini setelah uji pertama berhasil
           exclude: |
             **/.git*
             **/.git*/**
