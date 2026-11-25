@@ -411,7 +411,7 @@
                         </div>
                         <div class="cert-footer">
                             <span class="cert-date">Completed November 2026</span>
-                            <a href="LINK_VERIFIKASI_KAMU" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
+                            <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">Verify ↗</a>
                     </div>
                 </div>
                     <!-- Cert 2 -->
