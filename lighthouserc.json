@@ -2,6 +2,9 @@
   "ci": {
     "collect": {
       "numberOfRuns": 3,
+      "startServerCommand": "php -S localhost:8000",
+      "startServerReadyPattern": "Development Server",
+      "url": ["http://localhost:8000/index.php"],
       "settings": { "preset": "desktop" }
     },
     "assert": {

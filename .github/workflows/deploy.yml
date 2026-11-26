@@ -53,11 +53,33 @@ jobs:
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      #- name: Debug 403 (temporary)
+      #  run: |
+      #    for ua in \
+      #      "curl/8.0" \
+      #      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+      #      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36" \
+      #      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome-Lighthouse"
+      #    do
+      #      printf '%s -> ' "$ua"
+      #      curl -s -o /dev/null -w "%{http_code}\n" -A "$ua" https://resume.projectgomsil.com/
+      #    done
+      - uses: actions/checkout@v4
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: https://resume.projectgomsil.com/
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
 
   # ---------- Tahap 2: deploy, hanya jika semua cek lulus ----------
         
   deploy:
-    needs: [validate-html, link-check, secret-scan]
+    needs: [validate-html, link-check, secret-scan, lighthouse]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -78,7 +100,7 @@ jobs:
             config/**
             lighthouserc.json
             .gitleaksignore
-
+    
   # ---------- Tahap 3: verifikasi setelah deploy ----------
 
   smoke-test:
@@ -101,26 +123,3 @@ jobs:
           for f in assets/style.css assets/script.js assets/favicon.svg; do
             curl --fail --silent --show-error --location --head -o /dev/null "$SITE_URL/$f"
           done
-
-  lighthouse:
-    needs: smoke-test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Debug 403 (temporary)
-        run: |
-          for ua in \
-            "curl/8.0" \
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/120.0.0.0 Safari/537.36" \
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome-Lighthouse"
-          do
-            printf '%s -> ' "$ua"
-            curl -s -o /dev/null -w "%{http_code}\n" -A "$ua" https://resume.projectgomsil.com/
-          done
-      - uses: actions/checkout@v4
-      - name: Lighthouse CI
-        uses: treosh/lighthouse-ci-action@v12
-        with:
-          urls: https://resume.projectgomsil.com/
-          configPath: ./lighthouserc.json
-          uploadArtifacts: true
