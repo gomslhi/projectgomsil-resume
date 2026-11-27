@@ -14,7 +14,7 @@
     <meta property="og:title" content="Gomgom Silalahi - IT Infrastructure & DevOps">
     <meta property="og:description" content="6+ years engineering enterprise IT infrastructure and DevOps: cloud, CI/CD automation, observability.">
     <meta property="og:url" content="https://resume.projectgomsil.com/">
-    <meta property="og:image" content="https://resume.projectgomsil.com/assets/profile.png">
+    <meta property="og:image" content="https://resume.projectgomsil.com/assets/profile-og.jpg">
     <meta name="twitter:card" content="summary">
     <!-- Favicon dengan huruf 'g' yang modern -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -30,7 +30,7 @@
     <nav class="navbar">
         <div class="navbar-inner">
             <div class="logo">
-                <img src="assets/profile.png" alt="Gomgom Silalahi Profile" class="logo-img">
+                <img src="assets/profile.webp" alt="Gomgom Silalahi Profile" class="logo-img" width="36" height="36">
                 Gomgom Silalahi
             </div>
             <div class="nav-links">
@@ -113,7 +113,7 @@
                     <div class="company-group">
                         <div class="company-header">
                             <div class="company-logo-container">
-                                <img src="assets/gegi.png" alt="Great Eastern General Insurance">
+                                <img src="assets/gegi.webp" alt="Great Eastern General Insurance" width="300" height="200" loading="lazy" decoding="async">
                             </div>
                             <div class="company-details">
                                 <h3>PT Great Eastern General Insurance</h3>
@@ -151,7 +151,7 @@
                     <div class="company-group">
                         <div class="company-header">
                             <div class="company-logo-container">
-                                <img src="assets/eli.png" alt="Equity Life Indonesia">
+                                <img src="assets/eli.webp" alt="Equity Life Indonesia" width="300" height="169" loading="lazy" decoding="async">
                             </div>
                             <div class="company-details">
                                 <h3>PT Equity Life Indonesia</h3>
@@ -450,7 +450,7 @@
                 <div class="timeline">
                     <div class="company-header">
                         <div class="company-logo-container">
-                            <img src="assets/it_del.png" alt="Del Institute of Technology">
+                            <img src="assets/it_del.webp" alt="Del Institute of Technology" width="200" height="200" loading="lazy" decoding="async">
                         </div>
                         <div class="company-details">
                             <h3>Del Institute of Technology</h3>
