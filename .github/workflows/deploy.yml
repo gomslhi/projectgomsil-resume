@@ -3,11 +3,13 @@ name: Deploy to Hostinger with CI/CD Pipeline
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
-  group: deploy-production
-  cancel-in-progress: false
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
@@ -45,6 +47,9 @@ jobs:
 
   secret-scan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -79,6 +84,7 @@ jobs:
   # ---------- Tahap 2: deploy, hanya jika semua cek lulus ----------
         
   deploy:
+    if: github.ref == 'refs/heads/main'
     needs: [validate-html, link-check, secret-scan, lighthouse]
     runs-on: ubuntu-latest
     steps:
