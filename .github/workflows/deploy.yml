@@ -19,7 +19,7 @@ jobs:
   validate-html:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -29,7 +29,7 @@ jobs:
   link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Prepare site copy
         run: |
           mkdir _site
@@ -51,7 +51,7 @@ jobs:
       contents: read
       pull-requests: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Scan for leaked secrets
@@ -73,7 +73,7 @@ jobs:
       #      printf '%s -> ' "$ua"
       #      curl -s -o /dev/null -w "%{http_code}\n" -A "$ua" https://resume.projectgomsil.com/
       #    done
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
         with:
@@ -88,7 +88,7 @@ jobs:
     needs: [validate-html, link-check, secret-scan, lighthouse]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Deploy via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
