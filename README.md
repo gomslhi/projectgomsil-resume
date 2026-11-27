@@ -13,9 +13,9 @@ flowchart LR
   A[git push to main] --> B[HTML validation]
   A --> C[Link check]
   A --> D[Secret scan]
-  B & C & D --> E[Deploy via FTPS]
-  E --> F[Smoke test]
-  F --> G[Lighthouse CI]
+  A --> E[Lighthouse CI]
+  B & C & D & E --> F[Deploy via FTPS]
+  G --> F[Smoke test]
 ```
 
 | Stage | Tool | Purpose |
@@ -23,9 +23,10 @@ flowchart LR
 | HTML validation | htmlhint | Catch broken markup before deploy |
 | Link check | lychee | Find dead links and missing assets |
 | Secret scan | gitleaks | Prevent leaked credentials |
+| Quality audit | Lighthouse CI | Track performance, accessibility, SEO |
 | Deploy | FTP-Deploy-Action (FTPS) | Sync changed files to Hostinger |
 | Smoke test | curl | Verify homepage, CV PDF and assets after deploy |
-| Quality audit | Lighthouse CI | Track performance, accessibility, SEO |
+
 
 Credentials are stored in GitHub Secrets; the workflow runs with read-only token permissions and a concurrency lock to avoid overlapping deploys.
 
