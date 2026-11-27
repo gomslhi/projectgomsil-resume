@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomgom Silalahi - IT Infrastructure & DevOps</title>
+    <meta name="description" content="Gomgom Silalahi, IT Infrastructure and DevOps Engineer with 6+ years of enterprise experience in Infrastructure, CI/CD automation, and observability. Based in Jakarta, Indonesia.">
+    <meta name="author" content="Gomgom Silalahi">
+    <link rel="canonical" href="https://resume.projectgomsil.com/">
+
+    <!-- Open Graph: preview saat link dibagikan di LinkedIn, WhatsApp, dll -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gomgom Silalahi - IT Infrastructure & DevOps">
+    <meta property="og:description" content="6+ years engineering enterprise IT infrastructure and DevOps: cloud, CI/CD automation, observability.">
+    <meta property="og:url" content="https://resume.projectgomsil.com/">
+    <meta property="og:image" content="https://resume.projectgomsil.com/assets/profile.png">
+    <meta name="twitter:card" content="summary">
     <!-- Favicon dengan huruf 'g' yang modern -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
