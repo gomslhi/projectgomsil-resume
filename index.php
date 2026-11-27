@@ -472,7 +472,7 @@
                 <h2 class="section-title">Tech Stack</h2>
                 <div class="tech-stack-list">
                     <div class="tech-stack-group">
-                        <h4>Monitoring & Observability</h4>
+                        <h3>Monitoring & Observability</h3>
                         <div class="tags">
                             <span class="tag">Prometheus</span>
                             <span class="tag">Grafana</span>
@@ -480,14 +480,14 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Containers & Orchestration</h4>
+                        <h3>Containers & Orchestration</h3>
                         <div class="tags">
                             <span class="tag">Docker</span>
                             <span class="tag">Kubernetes</span>
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Cloud & Virtualization</h4>
+                        <h3>Cloud & Virtualization</h3>
                         <div class="tags">
                             <span class="tag">VMware ESXi</span>
                             <span class="tag">vSphere</span>
@@ -495,7 +495,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>CI/CD & Automation</h4>
+                        <h3>CI/CD & Automation</h3>
                         <div class="tags">
                             <span class="tag">Git</span>
                             <span class="tag">Jenkins</span>
@@ -504,7 +504,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Scripting </h4>
+                        <h3>Scripting </h3>
                         <div class="tags">
                             <span class="tag">Bash</span>
                             <span class="tag">PowerShell</span>
@@ -513,7 +513,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Operating Systems & Servers</h4>
+                        <h3>Operating Systems & Servers</h3>
                         <div class="tags">
                             <span class="tag">Windows Server</span>
                             <span class="tag">RHEL / CentOS</span>
@@ -522,7 +522,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Databases</h4>
+                        <h3>Databases</h3>
                         <div class="tags">
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">MS SQL Server</span>
@@ -531,7 +531,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Networking & Security</h4>
+                        <h3>Networking & Security</h3>
                         <div class="tags">
                             <span class="tag">MikroTik</span>
                             <span class="tag">Cisco</span>
@@ -540,7 +540,7 @@
                         </div>
                     </div>
                     <div class="tech-stack-group">
-                        <h4>Project Management</h4>
+                        <h3>Project Management</h3>
                         <div class="tags">
                             <span class="tag">Jira</span>
                             <span class="tag">Confluence</span>

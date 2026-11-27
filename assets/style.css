@@ -3,8 +3,8 @@
     --bg-main: #FFFFFF;
     --text-primary: #0F172A;
     --text-secondary: #475569;
-    --accent-cyan: #0284C7;
-    --accent-blue: #0284C7;
+    --accent-cyan: #0369A1;
+    --accent-blue: #0369A1;
     --accent-pink: #E11D48;
     --border-color: #E2E8F0;
     --nav-bg: rgba(255, 255, 255, 0.88);
@@ -17,10 +17,10 @@
     transition: background-color 0.3s, color 0.3s;
     --card-bg: #F8FAFC;
     --card-border: #E2E8F0;
-    --text-muted: #94A3B8;
+    --text-muted: #5B6B80;
     --metric-bg: rgba(2, 132, 199, 0.06);
     --metric-border: rgba(2, 132, 199, 0.2);
-    --metric-text: #0284C7;
+    --metric-text: #0369A1;
 }
 
 [data-theme="dark"] {
@@ -41,7 +41,7 @@
     --btn-hover-shadow: rgba(56, 189, 248, 0.2);
     --card-bg: #131824;
     --card-border: #1E2638;
-    --text-muted: #64748B;
+    --text-muted: #7C8BA1;
     --metric-bg: rgba(56, 189, 248, 0.06);
     --metric-border: rgba(56, 189, 248, 0.2);
     --metric-text: #38BDF8;
@@ -339,8 +339,8 @@ html.lenis body {
 }
 
 .pill-btn-primary:hover {
-    background-color: #0369A1;
-    border-color: #0369A1;
+    background-color: #075985;
+    border-color: #075985;
     box-shadow: 0 4px 16px rgba(2, 132, 199, 0.25);
     transform: translateY(-1px);
 }
@@ -383,8 +383,8 @@ html.lenis body {
 
 .pill-btn-download:hover {
     background-color: #F8FAFC;
-    border-color: #0284C7;
-    color: #0284C7;
+    border-color: #0369A1;
+    color: #0369A1;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     transform: translateY(-1px);
 }
@@ -453,7 +453,6 @@ html.lenis body {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-weight: 500;
-    opacity: 0.7;
     margin-top: 0.15rem;
 }
 
@@ -543,6 +542,7 @@ html.lenis body {
     gap: 0.55rem;
 }
 
+.tech-stack-group h3,
 .tech-stack-group h4,
 .tech-stack-group h5,
 .skill-group h4,
