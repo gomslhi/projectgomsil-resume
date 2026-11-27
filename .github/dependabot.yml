@@ -9,3 +9,6 @@ updates:
       timezone: "Asia/Jakarta"
     commit-message:
       prefix: "ci"
+    groups:
+      actions:
+        patterns: ["*"]
