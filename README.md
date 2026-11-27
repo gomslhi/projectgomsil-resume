@@ -15,7 +15,7 @@ flowchart LR
   A --> D[Secret scan]
   A --> E[Lighthouse CI]
   B & C & D & E --> F[Deploy via FTPS]
-  G --> F[Smoke test]
+  F --> G[Smoke test]
 ```
 
 | Stage | Tool | Purpose |
