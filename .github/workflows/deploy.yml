@@ -19,6 +19,8 @@ jobs:
   validate-html:
     runs-on: ubuntu-latest
     steps:
+      - name: TEST - paksa gagal
+        run: exit 1
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
@@ -129,3 +131,33 @@ jobs:
           for f in assets/style.css assets/script.js assets/favicon.svg; do
             curl --fail --silent --show-error --location --head -o /dev/null "$SITE_URL/$f"
           done
+
+  notify-failure:
+    if: failure() 
+    needs: [validate-html, link-check, secret-scan, lighthouse, deploy, smoke-test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send failure email
+        env:
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo "From: CI Pipeline <$SMTP_USERNAME>"
+            echo "To: $MAIL_TO"
+            echo "Subject: [FAILED] $REPO pipeline on main"
+            echo "Date: $(date -R)"
+            echo
+            echo "The CI/CD pipeline failed on main."
+            echo "Run: $RUN_URL"
+          } > mail.txt
+          curl --silent --show-error --fail --ssl-reqd \
+            --url "smtps://smtp.gmail.com:465" \
+            --user "$SMTP_USERNAME:$SMTP_PASSWORD" \
+            --mail-from "$SMTP_USERNAME" --mail-rcpt "$MAIL_TO" \
+            --upload-file mail.txt
+       
+      
