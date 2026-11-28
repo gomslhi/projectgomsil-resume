@@ -4,7 +4,7 @@
 
 Personal resume site: https://resume.projectgomsil.com
 
-Static HTML/CSS/JS served on Hostinger (PHP hosting), deployed automatically with GitHub Actions.
+Static HTML/CSS/JS served on Hostinger, deployed automatically with GitHub Actions.
 
 ## CI/CD pipeline
 
