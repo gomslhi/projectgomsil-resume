@@ -16,6 +16,7 @@ flowchart LR
   A --> E[Lighthouse CI]
   B & C & D & E --> F[Deploy via FTPS]
   F --> G[Smoke test]
+  B & C & D & E & F & G -. any failure on main .-> H[Email notification]
 ```
 
 | Stage | Tool | Purpose |
@@ -26,9 +27,29 @@ flowchart LR
 | Quality audit | Lighthouse CI | Track performance, accessibility, SEO |
 | Deploy | FTP-Deploy-Action (FTPS) | Sync changed files to Hostinger |
 | Smoke test | curl | Verify homepage, CV PDF and assets after deploy |
+| Failure alert | curl (SMTP) | Email me when any stage fails on `main` |
 
 
 Credentials are stored in GitHub Secrets; the workflow runs with read-only token permissions and a concurrency lock to avoid overlapping deploys.
+
+## Workflow
+
+- `main` is protected by a ruleset: no direct pushes, changes go through a pull request and must pass the HTML, link, secret and Lighthouse checks.
+- Deploy and smoke test run only on `main`; pull requests run the checks only.
+- Dependabot opens one grouped weekly pull request for GitHub Actions updates.
+
+### Production approval (not enabled)
+
+For a team setup, the `deploy` job can target a `production` environment with required reviewers, so a release waits for manual approval after all checks pass:
+
+```yaml
+deploy:
+  environment:
+    name: production
+    url: https://resume.projectgomsil.com
+```
+
+Not enabled here since this is a single-maintainer project.
 
 ## Local preview
 
